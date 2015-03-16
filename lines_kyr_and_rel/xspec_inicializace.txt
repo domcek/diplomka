@@ -1,0 +1,80 @@
+export HEADAS=/opt/heasoft-6.16/x86_64-unknown-linux-gnu-libc2.19-0/
+alias heainit=". $HEADAS/headas-init.sh"
+heainit
+xspec
+
+xspec:
+initpackage KY lmodel.dat /home/mecgyver/xspec/KY
+
+
+lmod ky /mnt/31660B856FD2FABA/xspec/models/KY/
+xset KYDIR /mnt/31660B856FD2FABA/xspec/models/KY/
+lmod relline /mnt/31660B856FD2FABA/xspec/models/relline
+lmod relxill /mnt/31660B856FD2FABA/xspec/models/relxill
+lmod xillver /mnt/31660B856FD2FABA/xspec/models/xillver
+
+initpackage relxill RELLINE_TABLES /mnt/31660B856FD2FABA/xspec/models/xillver/
+initpackage xillver xillver-a-Ec2.fits /mnt/31660B856FD2FABA/xspec/models/xillver
+
+AllModels.lmod("relline","/mnt/31660B856FD2FABA/xspec/models/relline/")
+
+pyxspec:
+AllModels.initpackage("KY","lmodel.dat", "/home/mecgyver/xspec/KY")
+AllModels.lmod("ky","/home/mecgyver/xspec/KY")
+
+
+
+
+
+def initpackage	(	 	self,
+ 	packageName,
+ 	modDescrFile,
+ 	dirPath = None,
+ 	udmget = False 
+)		
+Initialize a package of local models.
+
+Use this method to compile your local model source code and build
+a library, which can then be loaded into XSPEC with the 'lmod' method.
+
+packageName  -- The name of the model package [string].
+          The name should be all lower-case and contain NO
+          numerals or spaces.  The local models library file
+          will be based upon this name, and this is also the 
+          name you will use when loading the library with the 
+          'lmod' method.
+         
+modDescrFile -- Name of your local model description file [string].
+          This file is typically named 'lmodel.dat', but you're
+          free to name it something else.
+          
+dirPath      -- Optional directory path to your local models [string].
+          This may be an absolute or relative path.  If you 
+          don't enter this argument, XSPEC will look in the
+          directory given by the LOCAL_MODEL_DIRECTORY in your
+          Xspec.init start-up file.
+          
+udmget       -- Optional flag for when your models need to call XSPEC's
+          udmget function [bool].  Udmget is a function for 
+          allocating dynamic memory in Fortran routines, and
+          is no longer used within XSPEC itself.  If this
+          flag is set to 'True', initpackage will copy the
+          necessary files and build the udmget function within
+          your local models directory.
+          
+          
+def lmod	(	 	self,
+ 	packageName,
+ 	dirPath = None 
+)		
+Load a local models library.
+
+packageName -- The name of the model package to be loaded.  This
+         is the same name that is the first argument in
+         the initpackage command.
+         
+dirPath     -- An optional string argument specifying the (absolute or
+         relative) path to the local model directory.  If this
+         argument is not entered, Xspec will look in the
+         directory given by the LOCAL_MODEL_DIRECTORY in the
+         Xspec.init start-up file.

@@ -1,0 +1,11 @@
+abstract
+
+
+X-ray spectrum originating in/from active galactic nuclei (AGN) or Xray binaries (XRB) can be considered as combination of direct emission spectrum of source and reflected spectrum from acretion disc. This reflected spectrum arises from reflection of primary component on ionizied disc and depends on emissivity (local properties) of reflecting surface. In presented work we test new aprocach of recovering emissivity profile which considers the emission from each part of disc and show limitations of using this method. We perform simulations with different models using ionization parameter as constant in one case and as changing parameter in the other. 
+
+abstract
+
+
+X-ray spectrum originating from active galactic nuclei or X-ray binaries can be considered as a combination of direct and reprocessed emission from the accretion disc. In presented work we test aprocach of recovering emissivity profile which considers the emission from each part of disc and show limitations of using this method. We perform simulations with different set of model parameters and assumptions of local physics of the reprocessor including the response of disc surface ionization to the strong X-ray illumination.
+
+X-ray spectrum originating from Active Galactic Nuclei or X-ray Binaries can be considered as a combination of direct radiation from the source and indirect reprocessed emission from the accretion disc. In presented work we test aprocach of recovering emissivity profile which considers reprocessed emission from each part of disc and show limitations of using this method. We perform simulations with different set of model parameters and assumptions of local physics of the reprocessor including the response of disc surface ionization to the strong X-ray illumination.

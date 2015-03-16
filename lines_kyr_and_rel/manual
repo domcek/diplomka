@@ -1,0 +1,1336 @@
+@imightbehigh No more popcorn due to Sandstorms (curse you, Darude). Best way to solve this problem is to send Rustin Cohle, Catwoman, and Seneca Crane through a wormhole, to find another place to live. But then they found Jason bourne which said "fuck that, i'm going to Elysium", but he dieded. Then The movie ends with Rust who see Carcosa, and lands on the Mass Effect Citadel
+
+
+
+
+
+-DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DIRENT_H=1 -DHAVE_FCNTL_H=1 -DHAVE_LIMITS_H=1 -DHAVE_MALLOC_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DTIME_WITH_SYS_TIME=1 -DHAVE_ALLOCA_H=1 -DHAVE_ALLOCA=1 -Dg77Fortran=1 -DgFortran=1 -DHAVE_SIGSET=1 -DHAVE_CONNECT=1 -DHAVE_ACCEPT=1 -DHAVE_LIBM=1 -DHAVE_LIBDL=1 -DHAVE_LIBTINFO=1 -DXS_PYTHON_VERSION=27 -DSIZEOF_LONG=8 -I/opt/heasoft-6.16/Xspec/src -I/opt/heasoft-6.16/Xspec/src/main -I/opt/heasoft-6.16/Xspec/src/include -I/opt/heasoft-6.16/Xspec/src/XSFit -I/opt/heasoft-6.16/Xspec/src/XSFit/FitMethod -I/opt/heasoft-6.16/Xspec/src/XSFunctions -I/opt/heasoft-6.16/Xspec/src/xslib -I/opt/heasoft-6.16/Xspec/src/XSModel -I/opt/heasoft-6.16/Xspec/src/XSModel/Model -I/opt/heasoft-6.16/Xspec/src/XSPlot -I/opt/heasoft-6.16/Xspec/src/XSUser -I/opt/heasoft-6.16/Xspec/src/XSUtil -I/opt/heasoft-6.16/x86_64-unknown-linux-gnu-libc2.19-0/include -DINITPACKAGE lpack_ky.cxx
+g++ -c  -o ./xsudmget.o -O2 -Wall --pedantic -Wno-comment -Wno-long-long -g  -fPIC -I./ -I/opt/heasoft-6.16/Xspec/BLD/x86_64-unknown-linux-gnu-libc2.19-0/include -I/opt/heasoft-6.16/heacore/BLD/x86_64-unknown-linux-gnu-libc2.19-0/include -I/opt/heasoft-6.16/tcltk/BLD/x86_64-unknown-linux-gnu-libc2.19-0/include -I/opt/heasoft-6.16/Xspec/x86_64-unknown-linux-gnu-libc2.19-0/include -I/opt/heasoft-6.16/heacore/x86_64-unknown-linux-gnu-libc2.19-0/include -I/opt/heasoft-6.16/tcltk/x86_64-unknown-linux-gnu-libc2.19-0/include -DPACKAGE_NAME="" -DPACKAGE_TARNAME="" -DPACKAGE_VERSION="" -DPACKAGE_STRING="" -DPACKAGE_BUGREPORT="" -DPACKAGE_URL="" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DIRENT_H=1 -DHAVE_FCNTL_H=1 -DHAVE_LIMITS_H=1 -DHAVE_MALLOC_H=1 -DHAVE_STRING_H=1 -DHAVE_SYS_TIME_H=1 -DHAVE_UNISTD_H=1 -DTIME_WITH_SYS_TIME=1 -DHAVE_ALLOCA_H=1 -DHAVE_ALLOCA=1 -Dg77Fortran=1 -DgFortran=1 -DHAVE_SIGSET=1 -DHAVE_CONNECT=1 -DHAVE_ACCEPT=1 -DHAVE_LIBM=1 -DHAVE_LIBDL=1 -DHAVE_LIBTINFO=1 -DXS_PYTHON_VERSION=27 -DSIZEOF_LONG=8 -I/opt/heasoft-6.16/Xspec/src -I/opt/heasoft-6.16/Xspec/src/main -I/opt/heasoft-6.16/Xspec/src/include -I/opt/heasoft-6.16/Xspec/src/XSFit -I/opt/heasoft-6.16/Xspec/src/XSFit/FitMethod -I/opt/heasoft-6.16/Xspec/src/XSFunctions -I/opt/heasoft-6.16/Xspec/src/xslib -I/opt/heasoft-6.16/Xspec/src/XSModel -I/opt/heasoft-6.16/Xspec/src/XSModel/Model -I/opt/heasoft-6.16/Xspec/src/XSPlot -I/opt/heasoft-6.16/Xspec/src/XSUser -I/opt/heasoft-6.16/Xspec/src/XSUtil -I/opt/heasoft-6.16/x86_64-unknown-linux-gnu-libc2.19-0/include -DINITPACKAGE xsudmget.cxx
+gfortran -c  -o ./xsidre-0.3.9.o -O -Wall --pedantic -fno-second-underscore -g  -fno-automatic -fPIC -I/opt/heasoft-6.16/Xspec/src -I/opt/heasoft-6.16/Xspec/src/main -I/opt/heasoft-6.16/Xspec/src/include -I/opt/heasoft-6.16/Xspec/src/XSFit -I/opt/heasoft-6.16/Xspec/src/XSFit/FitMethod -I/opt/heasoft-6.16/Xspec/src/XSFunctions -I/opt/heasoft-6.16/Xspec/src/xslib -I/opt/heasoft-6.16/Xspec/src/XSModel -I/opt/heasoft-6.16/Xspec/src/XSModel/Model -I/opt/heasoft-6.16/Xspec/src/XSPlot -I/opt/heasoft-6.16/Xspec/src/XSUser -I/opt/heasoft-6.16/Xspec/src/XSUtil -I/opt/heasoft-6.16/x86_64-unknown-linux-gnu-libc2.19-0/include -DINITPACKAGE xsidre-0.3.9.f
+xspec.inc:10.15:
+    Included at xsidre-0.3.9.f:202:
+
+      INTEGER*2        MEMS(1)                                          
+               1
+Warning: GNU Extension: Nonstandard type declaration INTEGER*2 at (1)
+xspec.inc:11.15:
+    Included at xsidre-0.3.9.f:202:
+
+      INTEGER*4        MEMI(1)                                          
+               1
+Warning: GNU Extension: Nonstandard type declaration INTEGER*4 at (1)
+xspec.inc:12.15:
+    Included at xsidre-0.3.9.f:202:
+
+      INTEGER*4        MEML(1)                                          
+               1
+Warning: GNU Extension: Nonstandard type declaration INTEGER*4 at (1)
+xspec.inc:10.15:
+    Included at xsidre-0.3.9.f:571:
+
+      INTEGER*2        MEMS(1)                                          
+               1
+Warning: GNU Extension: Nonstandard type declaration INTEGER*2 at (1)
+xspec.inc:11.15:
+    Included at xsidre-0.3.9.f:571:
+
+      INTEGER*4        MEMI(1)                                          
+               1
+Warning: GNU Extension: Nonstandard type declaration INTEGER*4 at (1)
+xspec.inc:12.15:
+    Included at xsidre-0.3.9.f:571:
+
+      INTEGER*4        MEML(1)                                          
+               1
+Warning: GNU Extension: Nonstandard type declaration INTEGER*4 at (1)
+xspec.inc:17.24:
+    Included at xsidre-0.3.9.f:202:
+
+      EQUIVALENCE (MEMB, MEMS, MEMI, MEML, MEMR, MEMD, MEMX, MEMC)      
+                        1
+Warning: GNU Extension: Non-default type object or sequence mems in EQUIVALENCE statement at (1) with objects of different type
+xspec.inc:17.24:
+    Included at xsidre-0.3.9.f:202:
+
+      EQUIVALENCE (MEMB, MEMS, MEMI, MEML, MEMR, MEMD, MEMX, MEMC)      
+                        1
+Warning: GNU Extension: Non-NUMERIC object 'mems' in default NUMERIC EQUIVALENCE statement at (1)
+xspec.inc:17.60:
+    Included at xsidre-0.3.9.f:202:
+
+      EQUIVALENCE (MEMB, MEMS, MEMI, MEML, MEMR, MEMD, MEMX, MEMC)      
+                                                            1
+Warning: GNU Extension: Non-NUMERIC object 'memc' in default NUMERIC EQUIVALENCE statement at (1)
+xspec.inc:17.24:
+    Included at xsidre-0.3.9.f:571:
+
+      EQUIVALENCE (MEMB, MEMS, MEMI, MEML, MEMR, MEMD, MEMX, MEMC)      
+                        1
+Warning: GNU Extension: Non-default type object or sequence mems in EQUIVALENCE statement at (1) with objects of different type
+xspec.inc:17.24:
+    Included at xsidre-0.3.9.f:571:
+
+      EQUIVALENCE (MEMB, MEMS, MEMI, MEML, MEMR, MEMD, MEMX, MEMC)      
+                        1
+Warning: GNU Extension: Non-NUMERIC object 'mems' in default NUMERIC EQUIVALENCE statement at (1)
+xspec.inc:17.60:
+    Included at xsidre-0.3.9.f:571:
+
+      EQUIVALENCE (MEMB, MEMS, MEMI, MEML, MEMR, MEMD, MEMX, MEMC)      
+                                                            1
+Warning: GNU Extension: Non-NUMERIC object 'memc' in default NUMERIC EQUIVALENCE statement at (1)
+gfortran -c  -o ./xskyconv-0.1.19.o -O -Wall --pedantic -fno-second-underscore -g  -fno-automatic -fPIC -I/opt/heasoft-6.16/Xspec/src -I/opt/heasoft-6.16/Xspec/src/main -I/opt/heasoft-6.16/Xspec/src/include -I/opt/heasoft-6.16/Xspec/src/XSFit -I/opt/heasoft-6.16/Xspec/src/XSFit/FitMethod -I/opt/heasoft-6.16/Xspec/src/XSFunctions -I/opt/heasoft-6.16/Xspec/src/xslib -I/opt/heasoft-6.16/Xspec/src/XSModel -I/opt/heasoft-6.16/Xspec/src/XSModel/Model -I/opt/heasoft-6.16/Xspec/src/XSPlot -I/opt/heasoft-6.16/Xspec/src/XSUser -I/opt/heasoft-6.16/Xspec/src/XSUtil -I/opt/heasoft-6.16/x86_64-unknown-linux-gnu-libc2.19-0/include -DINITPACKAGE xskyconv-0.1.19.f
+xspec.inc:10.15:
+    Included at xskyconv-0.1.19.f:114:
+
+      INTEGER*2        MEMS(1)                                          
+               1
+Warning: GNU Extension: Nonstandard type declaration INTEGER*2 at (1)
+xspec.inc:11.15:
+    Included at xskyconv-0.1.19.f:114:
+
+      INTEGER*4        MEMI(1)                                          
+               1
+Warning: GNU Extension: Nonstandard type declaration INTEGER*4 at (1)
+xspec.inc:12.15:
+    Included at xskyconv-0.1.19.f:114:
+
+      INTEGER*4        MEML(1)                                          
+               1
+Warning: GNU Extension: Nonstandard type declaration INTEGER*4 at (1)
+xspec.inc:17.24:
+    Included at xskyconv-0.1.19.f:114:
+
+      EQUIVALENCE (MEMB, MEMS, MEMI, MEML, MEMR, MEMD, MEMX, MEMC)      
+                        1
+Warning: GNU Extension: Non-default type object or sequence mems in EQUIVALENCE statement at (1) with objects of different type
+xspec.inc:17.24:
+    Included at xskyconv-0.1.19.f:114:
+
+      EQUIVALENCE (MEMB, MEMS, MEMI, MEML, MEMR, MEMD, MEMX, MEMC)      
+                        1
+Warning: GNU Extension: Non-NUMERIC object 'mems' in default NUMERIC EQUIVALENCE statement at (1)
+xspec.inc:17.60:
+    Included at xskyconv-0.1.19.f:114:
+
+      EQUIVALENCE (MEMB, MEMS, MEMI, MEML, MEMR, MEMD, MEMX, MEMC)      
+                                                            1
+Warning: GNU Extension: Non-NUMERIC object 'memc' in default NUMERIC EQUIVALENCE statement at (1)
+xskyconv-0.1.19.f:105.40:
+
+      subroutine kyconv(ear,ne,param,ifl,photar,photer)                 
+                                        1
+Warning: Unused dummy argument 'ifl' at (1)
+xskyconv-0.1.19.f:108.38:
+
+      real idre_param(12), norm0, norm                                  
+                                      1
+Warning: Unused variable 'norm' declared at (1)
+xskyconv-0.1.19.f:105.54:
+
+      subroutine kyconv(ear,ne,param,ifl,photar,photer)                 
+                                                      1
+Warning: Unused dummy argument 'photer' at (1)
+gfortran -c  -o ./xskyrline-0.2.5.o -O -Wall --pedantic -fno-second-underscore -g  -fno-automatic -fPIC -I/opt/heasoft-6.16/Xspec/src -I/opt/heasoft-6.16/Xspec/src/main -I/opt/heasoft-6.16/Xspec/src/include -I/opt/heasoft-6.16/Xspec/src/XSFit -I/opt/heasoft-6.16/Xspec/src/XSFit/FitMethod -I/opt/heasoft-6.16/Xspec/src/XSFunctions -I/opt/heasoft-6.16/Xspec/src/xslib -I/opt/heasoft-6.16/Xspec/src/XSModel -I/opt/heasoft-6.16/Xspec/src/XSModel/Model -I/opt/heasoft-6.16/Xspec/src/XSPlot -I/opt/heasoft-6.16/Xspec/src/XSUser -I/opt/heasoft-6.16/Xspec/src/XSUtil -I/opt/heasoft-6.16/x86_64-unknown-linux-gnu-libc2.19-0/include -DINITPACKAGE xskyrline-0.2.5.f
+xskyrline-0.2.5.f:112.13:
+
+      ntable=param(11)                                                  
+             1
+Warning: Possible change of value in conversion from REAL(4) to INTEGER(4) at (1)
+xskyrline-0.2.5.f:69.41:
+
+      subroutine kyrline(ear,ne,param,ifl,photar,photer)                
+                                         1
+Warning: Unused dummy argument 'ifl' at (1)
+xskyrline-0.2.5.f:69.55:
+
+      subroutine kyrline(ear,ne,param,ifl,photar,photer)                
+                                                       1
+Warning: Unused dummy argument 'photer' at (1)
+make[2]: Entering directory `/home/mecgyver/xspec/KY'
+g++ -shared -O2 -Wl,--defsym=mem_=0x80,-E  -o libky.so     kyFunctionMap.o lpack_ky.o xsudmget.o xsidre-0.3.9.o xskyconv-0.1.19.o xskyrline-0.2.5.o   -L./ -L/opt/heasoft-6.16/Xspec/BLD/x86_64-unknown-linux-gnu-libc2.19-0/lib -L/opt/heasoft-6.16/heacore/BLD/x86_64-unknown-linux-gnu-libc2.19-0/lib -L/opt/heasoft-6.16/tcltk/BLD/x86_64-unknown-linux-gnu-libc2.19-0/lib -L/opt/heasoft-6.16/Xspec/x86_64-unknown-linux-gnu-libc2.19-0/lib -L/opt/heasoft-6.16/heacore/x86_64-unknown-linux-gnu-libc2.19-0/lib -L/opt/heasoft-6.16/tcltk/x86_64-unknown-linux-gnu-libc2.19-0/lib -lCCfits_2.4 -lcfitsio_3.37 -lXS -lXSUtil -lXSFunctions -lXSModel -ltcl8.5 -lCCfits_2.4 -lcfitsio_3.37 -lreadline -ltinfo -ldl -lm  -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. -lgfortran -lm -lgcc_s -lgcc -lquadmath -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc  
+make[2]: Leaving directory `/home/mecgyver/xspec/KY'
+make[1]: Leaving directory `/home/mecgyver/xspec/KY'
+
+Local model library has been built from model definition and code files in:
+/home/mecgyver/xspec/KY
+
+XSPEC12>xset KYDIR /home/mecgyver/xspec/KY/
+XSPEC12>lmod ky /home/mecgyver/xspec/KY/
+Model package ky successfully loaded.
+XSPEC12>mo kyrline
+
+Input parameter value, delta, min, bot, top, and max values for ...
+         0.9982        0.2(  0.009982)          0          0          1          1
+1:kyrline:a/M>
+             30          5(       0.3)          0          0         89         89
+2:kyrline:theta_o>
+              1       -0.5(      0.01)          1          1       1000       1000
+3:kyrline:rin>
+              1         -1(      0.01)          0          0          1          1
+4:kyrline:ms>
+            400         -1(         4)          1          1       1000       1000
+5:kyrline:rout>
+            6.4      -0.01(     0.064)          1          1         99         99
+6:kyrline:Erest>
+              3       -0.5(      0.03)        -20        -20         20         20
+7:kyrline:alpha>
+              3       -0.5(      0.03)        -20        -20         20         20
+8:kyrline:beta>
+            400       -0.5(         4)          1          1       1000       1000
+9:kyrline:rb>
+              0       -0.1(       0.1)     -0.999     -0.999         10         10
+10:kyrline:zshift>
+              0         -1(         1)          0          0          2          2
+11:kyrline:limb>
+              1       0.01(      0.01)          0          0      1e+20      1e+24
+12:kyrline:norm>
+ idre: initializing data tables, please wait...
+       Ref.: Dovciak M., Karas V. & Yaqoob T.
+             ApJS July 2004, Volume 153, Issue 1, pp. 205-221
+       ------------------------------------------------------
+        ...initializing finished
+
+========================================================================
+Model kyrline<1> Source No.: 1   Active/Off
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   kyrline    a/M        GM/c     0.998200     +/-  0.0          
+   2    1   kyrline    theta_o    deg      30.0000      +/-  0.0          
+   3    1   kyrline    rin        GM/c^2   1.00000      frozen
+   4    1   kyrline    ms                  1.00000      frozen
+   5    1   kyrline    rout       GM/c^2   400.000      frozen
+   6    1   kyrline    Erest      keV      6.40000      frozen
+   7    1   kyrline    alpha               3.00000      frozen
+   8    1   kyrline    beta                3.00000      frozen
+   9    1   kyrline    rb         GM/c^2   400.000      frozen
+  10    1   kyrline    zshift              0.0          frozen
+  11    1   kyrline    limb                0.0          frozen
+  12    1   kyrline    norm                1.00000      +/-  0.0          
+________________________________________________________________________
+
+XSPEC12>dummy 0.1 15. 1000
+XSPEC12>pl mo
+XSPEC12>cpd /xw
+XSPEC12>pl mo
+XSPEC12>addc 2 kyrline
+
+Input parameter value, delta, min, bot, top, and max values for ...
+         0.9982        0.2(  0.009982)          0          0          1          1
+13:kyrline:a/M>0
+             30          5(       0.3)          0          0         89         89
+14:kyrline:theta_o>/*
+
+========================================================================
+Model kyrline<1> + kyrline<2> Source No.: 1   Active/Off
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   kyrline    a/M        GM/c     0.998200     +/-  0.0          
+   2    1   kyrline    theta_o    deg      30.0000      +/-  0.0          
+   3    1   kyrline    rin        GM/c^2   1.00000      frozen
+   4    1   kyrline    ms                  1.00000      frozen
+   5    1   kyrline    rout       GM/c^2   400.000      frozen
+   6    1   kyrline    Erest      keV      6.40000      frozen
+   7    1   kyrline    alpha               3.00000      frozen
+   8    1   kyrline    beta                3.00000      frozen
+   9    1   kyrline    rb         GM/c^2   400.000      frozen
+  10    1   kyrline    zshift              0.0          frozen
+  11    1   kyrline    limb                0.0          frozen
+  12    1   kyrline    norm                1.00000      +/-  0.0          
+  13    2   kyrline    a/M        GM/c     0.0          +/-  0.0          
+  14    2   kyrline    theta_o    deg      30.0000      +/-  0.0          
+  15    2   kyrline    rin        GM/c^2   1.00000      frozen
+  16    2   kyrline    ms                  1.00000      frozen
+  17    2   kyrline    rout       GM/c^2   400.000      frozen
+  18    2   kyrline    Erest      keV      6.40000      frozen
+  19    2   kyrline    alpha               3.00000      frozen
+  20    2   kyrline    beta                3.00000      frozen
+  21    2   kyrline    rb         GM/c^2   400.000      frozen
+  22    2   kyrline    zshift              0.0          frozen
+  23    2   kyrline    limb                0.0          frozen
+  24    2   kyrline    norm                1.00000      +/-  0.0          
+
+________________________________________________________________________
+XSPEC12>pl 
+XSPEC12>mo kyconv*pexmon
+
+Input parameter value, delta, min, bot, top, and max values for ...
+         0.9982        0.2(  0.009982)          0          0          1          1
+1:kyconv:a/M>/*
+Compton reflection from neutral medium.
+See help for details.
+If you use results of this model in a paper,
+please refer to Magdziarz & Zdziarski 1995 MNRAS, 273, 837
+
+========================================================================
+Model kyconv<1>*pexmon<2> Source No.: 1   Active/Off
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   kyconv     a/M        GM/c     0.998200     +/-  0.0          
+   2    1   kyconv     theta_o    deg      30.0000      +/-  0.0          
+   3    1   kyconv     rin        GM/c^2   1.00000      frozen
+   4    1   kyconv     ms                  1.00000      frozen
+   5    1   kyconv     rout       GM/c^2   400.000      frozen
+   6    1   kyconv     alpha               3.00000      frozen
+   7    1   kyconv     beta                3.00000      frozen
+   8    1   kyconv     rb         GM/c^2   400.000      frozen
+   9    1   kyconv     zshift              0.0          frozen
+  10    1   kyconv     limb                0.0          frozen
+  11    1   kyconv     ne_loc              100.000      frozen
+  12    2   pexmon     PhoIndex            2.00000      +/-  0.0          
+  13    2   pexmon     foldE      keV      1000.00      frozen
+  14    2   pexmon     rel_refl            -1.00000     frozen
+  15    2   pexmon     redshift            0.0          frozen
+  16    2   pexmon     abund               1.00000      frozen
+  17    2   pexmon     Fe_abund            1.00000      frozen
+  18    2   pexmon     Incl       deg      60.0000      +/-  0.0          
+  19    2   pexmon     norm                1.00000      +/-  0.0          
+________________________________________________________________________
+
+XSPEC12>pl mo
+XSPEC12>newp 11 600
+XSPEC12>pl
+XSPEC12>addc 2 pexmon
+
+Input parameter value, delta, min, bot, top, and max values for ...
+              2       0.01(      0.02)        1.1        1.1        2.5        2.5
+12:pexmon:PhoIndex>/*
+
+========================================================================
+Model kyconv<1>(pexmon<2> + pexmon<3>) Source No.: 1   Active/Off
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   kyconv     a/M        GM/c     0.998200     +/-  0.0          
+   2    1   kyconv     theta_o    deg      30.0000      +/-  0.0          
+   3    1   kyconv     rin        GM/c^2   1.00000      frozen
+   4    1   kyconv     ms                  1.00000      frozen
+   5    1   kyconv     rout       GM/c^2   400.000      frozen
+   6    1   kyconv     alpha               3.00000      frozen
+   7    1   kyconv     beta                3.00000      frozen
+   8    1   kyconv     rb         GM/c^2   400.000      frozen
+   9    1   kyconv     zshift              0.0          frozen
+  10    1   kyconv     limb                0.0          frozen
+  11    1   kyconv     ne_loc              600.000      frozen
+  12    2   pexmon     PhoIndex            2.00000      +/-  0.0          
+  13    2   pexmon     foldE      keV      1000.00      frozen
+  14    2   pexmon     rel_refl            -1.00000     frozen
+  15    2   pexmon     redshift            0.0          frozen
+  16    2   pexmon     abund               1.00000      frozen
+  17    2   pexmon     Fe_abund            1.00000      frozen
+  18    2   pexmon     Incl       deg      60.0000      +/-  0.0          
+  19    2   pexmon     norm                1.00000      +/-  0.0          
+  20    3   pexmon     PhoIndex            2.00000      +/-  0.0          
+  21    3   pexmon     foldE      keV      1000.00      frozen
+  22    3   pexmon     rel_refl            -1.00000     frozen
+  23    3   pexmon     redshift            0.0          frozen
+  24    3   pexmon     abund               1.00000      frozen
+  25    3   pexmon     Fe_abund            1.00000      frozen
+  26    3   pexmon     Incl       deg      60.0000      +/-  0.0          
+  27    3   pexmon     norm                1.00000      +/-  0.0          
+
+________________________________________________________________________
+XSPEC12>pl
+XSPEC12>sho mo
+
+Current model list:
+
+Model kyconv<1>(pexmon<2> + pexmon<3>) Source No.: 1   Active/Off
+      For Data Group(s): 1 
+
+   Using energies from responses.
+
+XSPEC12>delc 3
+
+========================================================================
+Model kyconv<1>*pexmon<2>   Source No.: 1   Active/Off
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   kyconv     a/M        GM/c     0.998200     +/-  0.0          
+   2    1   kyconv     theta_o    deg      30.0000      +/-  0.0          
+   3    1   kyconv     rin        GM/c^2   1.00000      frozen
+   4    1   kyconv     ms                  1.00000      frozen
+   5    1   kyconv     rout       GM/c^2   400.000      frozen
+   6    1   kyconv     alpha               3.00000      frozen
+   7    1   kyconv     beta                3.00000      frozen
+   8    1   kyconv     rb         GM/c^2   400.000      frozen
+   9    1   kyconv     zshift              0.0          frozen
+  10    1   kyconv     limb                0.0          frozen
+  11    1   kyconv     ne_loc              600.000      frozen
+  12    2   pexmon     PhoIndex            2.00000      +/-  0.0          
+  13    2   pexmon     foldE      keV      1000.00      frozen
+  14    2   pexmon     rel_refl            -1.00000     frozen
+  15    2   pexmon     redshift            0.0          frozen
+  16    2   pexmon     abund               1.00000      frozen
+  17    2   pexmon     Fe_abund            1.00000      frozen
+  18    2   pexmon     Incl       deg      60.0000      +/-  0.0          
+  19    2   pexmon     norm                1.00000      +/-  0.0          
+
+________________________________________________________________________
+XSPEC12>addc 3 pexmon
+
+Input parameter value, delta, min, bot, top, and max values for ...
+              2       0.01(      0.02)        1.1        1.1        2.5        2.5
+20:pexmon:PhoIndex>/*
+
+========================================================================
+Model kyconv<1>*pexmon<2> + pexmon<3> Source No.: 1   Active/Off
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   kyconv     a/M        GM/c     0.998200     +/-  0.0          
+   2    1   kyconv     theta_o    deg      30.0000      +/-  0.0          
+   3    1   kyconv     rin        GM/c^2   1.00000      frozen
+   4    1   kyconv     ms                  1.00000      frozen
+   5    1   kyconv     rout       GM/c^2   400.000      frozen
+   6    1   kyconv     alpha               3.00000      frozen
+   7    1   kyconv     beta                3.00000      frozen
+   8    1   kyconv     rb         GM/c^2   400.000      frozen
+   9    1   kyconv     zshift              0.0          frozen
+  10    1   kyconv     limb                0.0          frozen
+  11    1   kyconv     ne_loc              600.000      frozen
+  12    2   pexmon     PhoIndex            2.00000      +/-  0.0          
+  13    2   pexmon     foldE      keV      1000.00      frozen
+  14    2   pexmon     rel_refl            -1.00000     frozen
+  15    2   pexmon     redshift            0.0          frozen
+  16    2   pexmon     abund               1.00000      frozen
+  17    2   pexmon     Fe_abund            1.00000      frozen
+  18    2   pexmon     Incl       deg      60.0000      +/-  0.0          
+  19    2   pexmon     norm                1.00000      +/-  0.0          
+  20    3   pexmon     PhoIndex            2.00000      +/-  0.0          
+  21    3   pexmon     foldE      keV      1000.00      frozen
+  22    3   pexmon     rel_refl            -1.00000     frozen
+  23    3   pexmon     redshift            0.0          frozen
+  24    3   pexmon     abund               1.00000      frozen
+  25    3   pexmon     Fe_abund            1.00000      frozen
+  26    3   pexmon     Incl       deg      60.0000      +/-  0.0          
+  27    3   pexmon     norm                1.00000      +/-  0.0          
+
+________________________________________________________________________
+XSPEC12>sho model
+
+Current model list:
+
+Model kyconv<1>*pexmon<2> + pexmon<3> Source No.: 1   Active/Off
+      For Data Group(s): 1 
+
+   Using energies from responses.
+
+doležite!!
+XSPEC12>xset KYDIR /home/mecgyver/xspec/KY/
+XSPEC12>lmod ky /home/mecgyver/xspec/KY/
+Model package ky successfully loaded.
+
+
+
+#################druhe
+		XSPEC version: 12.8.2
+	Build Date/Time: Sat Oct 11 00:36:33 2014
+
+XSPEC12>fakeit none
+
+***Error: Cannot create fake data.  There are no active models.
+
+XSPEC12>mo po
+
+Input parameter value, delta, min, bot, top, and max values for ...
+              1       0.01(      0.01)         -3         -2          9         10
+1:powerlaw:PhoIndex>/*
+
+========================================================================
+Model powerlaw<1> Source No.: 1   Active/Off
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   powerlaw   PhoIndex            1.00000      +/-  0.0          
+   2    1   powerlaw   norm                1.00000      +/-  0.0          
+________________________________________________________________________
+
+XSPEC12>fakeit none
+For fake spectrum #1 response file is needed: epn_ff20_sdY9_v12.0.rmf 
+   ...and ancillary file: pn-thin-5.arf 
+ Use counting statistics in creating fake data? (y): 
+ Input optional fake file prefix: 
+ Fake data file name (epn_ff20_sdY9_v12.0.fak): pokus.fak
+ Exposure time, correction norm, bkg exposure time (1.00000, 1.00000, 1.00000): 100000.
+
+No background will be applied to fake spectrum #1
+
+1 spectrum  in use
+ 
+
+Fit statistic : Chi-Squared =        3192.87 using 4096 PHA bins.
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+
+Test statistic : Chi-Squared =        3192.87 using 4096 PHA bins.
+ Reduced chi-squared =       0.779890 for   4094 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+XSPEC12>pl da
+***Warning: Fit is not current.
+XSPEC12>cpd /xw
+XSPEC12>pl
+***Warning: Fit is not current.
+XSPEC12>setp ene
+XSPEC12>pl
+***Warning: Fit is not current.
+XSPEC12>ign **-0.5
+    95 channels (1-95) ignored in spectrum #     1
+
+Fit statistic : Chi-Squared =        3103.43 using 4001 PHA bins.
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+
+Test statistic : Chi-Squared =        3103.43 using 4001 PHA bins.
+ Reduced chi-squared =       0.776052 for   3999 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+XSPEC12>pl
+***Warning: Fit is not current.
+XSPEC12>ign 10.-**
+  2097 channels (2000-4096) ignored in spectrum #     1
+
+Fit statistic : Chi-Squared =        1873.38 using 1904 PHA bins.
+
+Test statistic : Chi-Squared =        1873.38 using 1904 PHA bins.
+ Reduced chi-squared =       0.984954 for   1902 degrees of freedom 
+ Null hypothesis probability =   6.756323e-01
+ Current data and model not fit yet.
+
+XSPEC12>pl
+***Warning: Fit is not current.
+XSPEC12>sho mo
+
+Current model list:
+
+Model powerlaw<1> Source No.: 1   Active/On
+      For Data Group(s): 1 
+
+   Using energies from responses.
+
+XSPEC12>sho all
+
+XSPEC version: 12.8.2
+
+Thu Dec  4 15:23:12 2014
+ Auto-saving is done after every command.
+ Fit statistic in use: Chi-Squared
+ Minimization technique: Levenberg-Marquardt
+    Convergence criterion = 0.01
+    Parameter fit deltas: 0.01 * parValue
+ Always calculate parameter derivatives using full (slower) numerical differentiation: No
+ Querying enabled.
+ Prefit-renorming enabled.
+ Solar abundance table: angr
+ Photoionization Cross-Section Table:
+    bcmc:  Balucinska-Church and McCammon, 1998
+ Cosmology in use: H0 = 70 q0 = 0 Lambda0 = 0.73
+ Model data directory: /opt/heasoft-6.16/x86_64-unknown-linux-gnu-libc2.19-0/../spectral/modelData/
+ Plot settings:
+   Showing of individual additive components is OFF.
+   Showing of background spectra is OFF.
+   Effective area normalization is OFF.
+   Current unit settings:
+      Energy     = keV
+      Wavelength = angstrom, with Y-Axis displayed per Hz
+   X-Axis data display mode: Energy
+   Spectra plots will be shifted to source frame by redshift value z: 0
+   Device: /xw
+   Plotting of line IDs is OFF.
+   Splashpage is ON.
+   xlog for data plots is ON.
+   ylog for data plots is OFF.
+
+   Default plot rebin settings for all plot groups:
+   Min. Signif.   Max. # Bins   Error Type
+        0.00000             1         quad
+
+ Responses read: 
+   epn_ff20_sdY9_v12.0.rmf associated with spectrum 1 source 1
+      energies: 2067 channels: 4096
+ Distinct RMF files: 
+     epn_ff20_sdY9_v12.0.rmf
+
+1 file 1 spectrum 
+Spectrum 1  Spectral Data File: pokus.fak
+Net count rate (cts/s) for Spectrum:1  2.778e+03 +/- 1.667e-01
+ Assigned to Data Group 1 and Plot Group 1
+  Noticed Channels:  96-1999
+  Telescope: XMM Instrument: EPN  Channel Type: PI
+  Exposure Time: 1e+05 sec
+ Using fit statistic: chi
+ Using test statistic: chi
+ Using Response (RMF) File            epn_ff20_sdY9_v12.0.rmf for Source 1
+ Using Auxiliary Response (ARF) File  pn-thin-5.arf
+
+ Spectral data counts: 2.77811e+08
+ Model predicted rate: 2777.87
+
+
+Current model list:
+
+========================================================================
+Model powerlaw<1> Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   powerlaw   PhoIndex            1.00000      +/-  0.0          
+   2    1   powerlaw   norm                1.00000      +/-  0.0          
+________________________________________________________________________
+
+   Using energies from responses.
+
+Fit statistic : Chi-Squared =        1873.38 using 1904 PHA bins.
+
+Test statistic : Chi-Squared =        1873.38 using 1904 PHA bins.
+ Reduced chi-squared =       0.984954 for   1902 degrees of freedom 
+ Null hypothesis probability =   6.756323e-01
+ Current data and model not fit yet.
+ Weighting method: standard
+XSPEC12>flux
+ Model Flux    1.6094 photons (1.2818e-08 ergs/cm^2/s) range (2.0000 - 10.000 keV)
+XSPEC12>newp 2 1e-4
+
+Fit statistic : Chi-Squared =   2.777553e+08 using 1904 PHA bins.
+
+Test statistic : Chi-Squared =   2.777553e+08 using 1904 PHA bins.
+ Reduced chi-squared =       146033.3 for   1902 degrees of freedom 
+ Null hypothesis probability =   0.000000e+00
+ Current data and model not fit yet.
+XSPEC12>flux
+ Model Flux 0.00016094 photons (1.2818e-12 ergs/cm^2/s) range (2.0000 - 10.000 keV)
+XSPEC12>fakeit none
+For fake spectrum #1 response file is needed: epn_ff20_sdY9_v12.0.rmf 
+   ...and ancillary file: pn-thin-5.arf 
+ Use counting statistics in creating fake data? (y): 
+ Input optional fake file prefix: 
+ Fake data file name (pokus.fak.fak): 
+ Exposure time, correction norm, bkg exposure time (1.00000, 1.00000, 1.00000): 100000.
+
+No background will be applied to fake spectrum #1
+
+1 spectrum  in use
+ 
+
+Fit statistic : Chi-Squared =        2749.14 using 4096 PHA bins.
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+
+Test statistic : Chi-Squared =        2749.14 using 4096 PHA bins.
+ Reduced chi-squared =       0.671504 for   4094 degrees of freedom 
+ Null hypothesis probability =   1.000000e+00
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+XSPEC12>pl
+***Warning: Fit is not current.
+XSPEC12>ign **-0.5 10.-**
+    95 channels (1-95) ignored in spectrum #     1
+  2097 channels (2000-4096) ignored in spectrum #     1
+
+Fit statistic : Chi-Squared =        2448.41 using 1904 PHA bins.
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+
+Test statistic : Chi-Squared =        2448.41 using 1904 PHA bins.
+ Reduced chi-squared =        1.28728 for   1902 degrees of freedom 
+ Null hypothesis probability =   1.971776e-16
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+XSPEC12>pl
+***Warning: Fit is not current.
+XSPEC12>mo kyrline
+
+***XSPEC Error:  No model component named kyrline
+kyrline is not a valid model component name.
+ Additive Models: 
+agauss      apec        bapec       bbody       bbodyrad    bexrav      
+bexriv      bkn2pow     bknpower    bmc         bremss      bvapec      
+bvvapec     c6mekl      c6pmekl     c6pvmkl     c6vmekl     cemekl      
+cevmkl      cflow       compLS      compPS      compST      compTT      
+compbb      compmag     comptb      compth      cplinear    cutoffpl    
+disk        diskbb      diskir      diskline    diskm       disko       
+diskpbb     diskpn      eplogpar    eqpair      eqtherm     equil       
+expdec      ezdiskbb    gadem       gaussian    gnei        grad        
+grbm        kerrbb      kerrd       kerrdisk    laor        laor2       
+logpar      lorentz     meka        mekal       mkcflow     nei         
+npshock     nsa         nsagrav     nsatmos     nsmax       nsmaxg      
+nsx         nteea       nthComp     optxagn     optxagnf    pegpwrlw    
+pexmon      pexrav      pexriv      plcabs      posm        powerlaw    
+pshock      raymond     redge       refsch      rnei        sedov       
+sirf        smaug       srcut       sresc       step        vapec       
+vbremss     vequil      vgadem      vgnei       vmcflow     vmeka       
+vmekal      vnei        vnpshock    vpshock     vraymond    vrnei       
+vsedov      vvapec      vvgnei      vvnei       vvnpshock   vvpshock    
+vvrnei      vvsedov     zagauss     zbbody      zbremss     zgauss      
+zpowerlw    
+
+ Multiplicative Models: 
+SSS_ice     TBabs       TBgrain     TBvarabs    absori      acisabs     
+cabs        constant    cyclabs     dust        edge        expabs      
+expfac      gabs        heilin      highecut    hrefl       lyman       
+notch       pcfabs      phabs       plabs       pwab        recorn      
+redden      smedge      spexpcut    spline      swind1      uvred       
+varabs      vphabs      wabs        wndabs      xion        zTBabs      
+zbabs       zdust       zedge       zhighect    zigm        zpcfabs     
+zphabs      zredden     zsmdust     zvarabs     zvfeabs     zvphabs     
+zwabs       zwndabs     zxipcf      
+
+ Convolution Models: 
+cflux       cpflux      gsmooth     ireflect    kdblur      kdblur2     
+kerrconv    lsmooth     partcov     rdblur      reflect     rgsxsrc     
+simpl       zashift     zmshift     
+
+ Mixing Models: 
+ascac       projct      suzpsf      xmmpsf      
+
+ Pile-up Models: 
+pileup      
+
+ Additional models are available at :
+	 legacy.gsfc.nasa.gov/docs/xanadu/xspec/newmodels.html
+
+XSPEC12>mo relline
+
+***XSPEC Error:  No model component named relline
+relline is not a valid model component name.
+ Additive Models: 
+      agauss        apec       bapec       bbody    bbodyrad      bexrav
+      bexriv     bkn2pow    bknpower         bmc      bremss      bvapec
+     bvvapec      c6mekl     c6pmekl     c6pvmkl     c6vmekl      cemekl
+      cevmkl       cflow      compLS      compPS      compST      compTT
+      compbb     compmag      comptb      compth    cplinear    cutoffpl
+        disk      diskbb      diskir    diskline       diskm       disko
+     diskpbb      diskpn    eplogpar      eqpair     eqtherm       equil
+      expdec    ezdiskbb       gadem    gaussian        gnei        grad
+        grbm      kerrbb       kerrd    kerrdisk        laor       laor2
+      logpar     lorentz        meka       mekal     mkcflow         nei
+     npshock         nsa     nsagrav     nsatmos       nsmax      nsmaxg
+         nsx       nteea     nthComp     optxagn    optxagnf    pegpwrlw
+      pexmon      pexrav      pexriv      plcabs        posm    powerlaw
+      pshock     raymond       redge      refsch        rnei       sedov
+        sirf       smaug       srcut       sresc        step       vapec
+     vbremss      vequil      vgadem       vgnei     vmcflow       vmeka
+      vmekal        vnei    vnpshock     vpshock    vraymond       vrnei
+      vsedov      vvapec      vvgnei       vvnei   vvnpshock    vvpshock
+      vvrnei     vvsedov     zagauss      zbbody     zbremss      zgauss
+    zpowerlw
+
+ Multiplicative Models: 
+     SSS_ice       TBabs     TBgrain    TBvarabs      absori     acisabs
+        cabs    constant     cyclabs        dust        edge      expabs
+      expfac        gabs      heilin    highecut       hrefl       lyman
+       notch      pcfabs       phabs       plabs        pwab      recorn
+      redden      smedge    spexpcut      spline      swind1       uvred
+      varabs      vphabs        wabs      wndabs        xion      zTBabs
+       zbabs       zdust       zedge    zhighect        zigm     zpcfabs
+      zphabs     zredden     zsmdust     zvarabs     zvfeabs     zvphabs
+       zwabs     zwndabs      zxipcf
+
+ Convolution Models: 
+       cflux      cpflux     gsmooth    ireflect      kdblur     kdblur2
+    kerrconv     lsmooth     partcov      rdblur     reflect     rgsxsrc
+       simpl     zashift     zmshift
+
+ Mixing Models: 
+       ascac      projct      suzpsf      xmmpsf
+
+ Pile-up Models: 
+      pileup
+
+ Additional models are available at :
+
+#### skok
+2083.18      1.0796e+06    0     0.0758859       3.01153    0.00100208       1.00000       58.3719      -3.00000   1.62134e-06
+2083.02      1.08407e+06   0     0.0759275       3.01175    0.00100223       1.00000       58.3822      -3.00000   1.62563e-06
+2082.88      1.09003e+06   0     0.0759681       3.01196    0.00100238       1.00000       58.3864      -3.00000   1.63004e-06
+2082.74      1.09688e+06   0     0.0760078       3.01217    0.00100253       1.00000       58.3882      -3.00000   1.63451e-06
+2082.61      1.10433e+06   0     0.0760464       3.01238    0.00100267       1.00000       58.3891      -3.00000   1.63896e-06
+2082.49      1.11207e+06   0     0.0760842       3.01258    0.00100281       1.00000       58.3897      -3.00000   1.64337e-06
+2082.38      1.11997e+06   0     0.0761210       3.01278    0.00100294       1.00000       58.3901      -3.00000   1.64773e-06
+2082.27      1.12792e+06   0     0.0761570       3.01298    0.00100307       1.00000       58.3904      -3.00000   1.65201e-06
+2082.17      1.13588e+06   0     0.0761921       3.01316    0.00100320       1.00000       58.3908      -3.00000   1.65622e-06
+2082.08      1.14378e+06   0     0.0762264       3.01335    0.00100333       1.00000       58.3911      -3.00000   1.66034e-06
+Number of trials exceeded: continue fitting? 
+2081.99      1.15159e+06   0     0.0762599       3.01353    0.00100345       1.00000       58.3914      -3.00000   1.66437e-06
+2081.9       1.15928e+06   0     0.0762925       3.01371    0.00100357       1.00000       58.3917      -3.00000   1.66832e-06
+2081.82      1.16685e+06   0     0.0763245       3.01388    0.00100369       1.00000       58.3920      -3.00000   1.67218e-06
+2081.75      1.17427e+06   0     0.0763556       3.01405    0.00100380       1.00000       58.3923      -3.00000   1.67596e-06
+2081.68      1.18154e+06   0     0.0763860       3.01421    0.00100391       1.00000       58.3925      -3.00000   1.67964e-06
+2079.92      1.42639e+06  -1     0.0766008       3.01495    0.00100483       1.00000       58.2814      -3.00000   1.53749e-06
+2079.1       128230       -2     0.0771830       3.01793    0.00100701       1.00000       58.2846      -3.00000   1.56956e-06
+2079.04      6581.55      -3     0.0774022       3.01909    0.00100782       1.00000       58.2812      -3.00000   1.58845e-06
+2079.04      290.41       -4     0.0774084       3.01912    0.00100784       1.00000       58.2820      -3.00000   1.58891e-06
+***Warning: Zero alpha-matrix diagonal element for parameter 10
+ Parameter 10 is pegged at -3 due to zero or negative pivot element, likely
+ caused by the fit being insensitive to the parameter.
+2079.04      8.82972       1     0.0774084       3.01912    0.00100784       1.00000       58.2820      -3.00000   1.58893e-06
+======================================================================
+ Variances and Principal Axes
+                 1        2        3        4        5       16  
+ 2.2682E-14| -0.0000  -0.0000   0.0166  -0.0000   0.0000   0.9999  
+ 7.8075E-13|  0.0038  -0.0000  -0.9999  -0.0000   0.0000   0.0166  
+ 1.1625E-07| -0.9869   0.1612  -0.0038  -0.0006   0.0000   0.0001  
+ 2.5031E-05|  0.1612   0.9868   0.0006  -0.0158   0.0001   0.0000  
+ 9.1811E-02| -0.0019  -0.0156  -0.0000  -0.9954   0.0940  -0.0000  
+ 1.4597E+00|  0.0002   0.0014   0.0000   0.0940   0.9956   0.0000  
+----------------------------------------------------------------------
+
+========================================================================
+  Covariance Matrix
+        1           2           3           4           5           6   
+   1.154e-06   7.102e-06   3.879e-09   2.014e-04   2.402e-04   4.579e-10
+   7.102e-06   4.962e-05   2.318e-08   1.619e-03   1.922e-03   3.605e-09
+   3.879e-09   2.318e-08   1.397e-11   5.800e-07   6.947e-07   1.348e-12
+   2.014e-04   1.619e-03   5.800e-07   1.040e-01   1.285e-01   2.033e-07
+   2.402e-04   1.922e-03   6.947e-07   1.285e-01   1.448e+00   2.487e-07
+   4.579e-10   3.605e-09   1.348e-12   2.033e-07   2.487e-07   4.288e-13
+------------------------------------------------------------------------
+
+========================================================================
+Model phabs<1>(powerlaw<2> + kyrline<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   phabs      nH         10^22    7.74084E-02  +/-  1.07423E-03  
+   2    2   powerlaw   PhoIndex            3.01912      +/-  7.04399E-03  
+   3    2   powerlaw   norm                1.00784E-03  +/-  3.73707E-06  
+   4    3   kyrline    a/M        GM/c     1.00000      +/-  0.322431     
+   5    3   kyrline    theta_o    deg      58.2820      +/-  1.20315      
+   6    3   kyrline    rin        GM/c^2   1.00000      frozen
+   7    3   kyrline    ms                  1            frozen
+   8    3   kyrline    rout       GM/c^2   400.000      frozen
+   9    3   kyrline    Erest      keV      6.40000      frozen
+  10    3   kyrline    h/q_out    GM/c^2   -3.00000     +/-  -1.00000     
+  11    3   kyrline    q_in                -3.00000     frozen
+  12    3   kyrline    rb         GM/c^2   400.000      frozen
+  13    3   kyrline    limb                0            frozen
+  14    3   kyrline    gamma               3.01912      = 2
+  15    3   kyrline    zshift              0.0          frozen
+  16    3   kyrline    norm                1.58893E-06  +/-  6.54832E-07  
+________________________________________________________________________
+
+
+Fit statistic : Chi-Squared =        2079.04 using 1904 PHA bins.
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+
+Test statistic : Chi-Squared =        2079.04 using 1904 PHA bins.
+ Reduced chi-squared =        1.09596 for   1897 degrees of freedom 
+ Null hypothesis probability =   2.010357e-03
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+XSPEC12>thaw 11
+
+Fit statistic : Chi-Squared =        2079.04 using 1904 PHA bins.
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+
+Test statistic : Chi-Squared =        2079.04 using 1904 PHA bins.
+ Reduced chi-squared =        1.09654 for   1896 degrees of freedom 
+ Null hypothesis probability =   1.910807e-03
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+XSPEC12>fit 1000
+                                   Parameters
+Chi-Squared  |beta|/N    Lvl          1:nH    2:PhoIndex        3:norm         4:a/M     5:theta_o    10:h/q_out       11:q_in       16:norm
+***Warning: Zero alpha-matrix diagonal element for parameter 10
+ Parameter 10 is pegged at -3 due to zero or negative pivot element, likely
+ caused by the fit being insensitive to the parameter.
+2076.28      130.197       0     0.0774093       3.01924    0.00100780       1.00000       58.3086      -3.00000      -3.22527   1.68199e-06
+2052.57      69031.1      -1     0.0776639       3.02300    0.00100812       1.00000       58.8014      -3.00000      -5.03289   2.38865e-06
+2044.05      1.29294e+06  -2     0.0795853       3.03681    0.00101424       1.00000       62.6129      -3.00000      -6.09806   3.53659e-06
+2043.06      78533.2      -1     0.0797314       3.03778    0.00101473       1.00000       57.5753      -3.00000      -5.40863   3.61290e-06
+2042.25      68201.3      -1     0.0798674       3.03858    0.00101522       1.00000       62.0543      -3.00000      -5.99694   3.64424e-06
+2040.2       32062.7       0     0.0798810       3.03870    0.00101526       1.00000       60.7197      -3.00000      -5.96302   3.67406e-06
+2039.95      129759       -1     0.0800025       3.03948    0.00101567       1.00000       59.5340      -3.00000      -5.69981   3.70189e-06
+2039.73      9259.7       -1     0.0801057       3.04006    0.00101606       1.00000       60.6399      -3.00000      -5.82772   3.71308e-06
+2039.62      12587.7       0     0.0801159       3.04012    0.00101609       1.00000       60.2993      -3.00000      -5.81280   3.72235e-06
+2039.56      29894        -1     0.0802014       3.04063    0.00101639       1.00000       60.0061      -3.00000      -5.75236   3.73904e-06
+2039.36      6672.69      -2     0.0805297       3.04262    0.00101755       1.00000       60.5774      -3.00000      -5.87422   3.83818e-06
+2039.33      6715.07       0     0.0805328       3.04265    0.00101756       1.00000       60.3601      -3.00000      -5.86448   3.84392e-06
+2039.32      17204.9       0     0.0805359       3.04267    0.00101757       1.00000       60.3172      -3.00000      -5.85543   3.84666e-06
+***Warning: Zero alpha-matrix diagonal element for parameter 10
+ Parameter 10 is pegged at -3 due to zero or negative pivot element, likely
+ caused by the fit being insensitive to the parameter.
+2039.32      6857.74       0     0.0805363       3.04267    0.00101757       1.00000       60.3227      -3.00000      -5.85251   3.84902e-06
+================================================================================
+ Variances and Principal Axes
+                 1        2        3        4        5       11       16  
+ 5.7560E-14| -0.0000  -0.0001   0.0483  -0.0000   0.0000   0.0000   0.9988  
+ 8.1531E-13|  0.0039  -0.0001  -0.9988  -0.0000   0.0000   0.0000   0.0483  
+ 1.2230E-07| -0.9882   0.1524  -0.0039  -0.0109   0.0000   0.0002   0.0002  
+ 3.5138E-05|  0.1482   0.9383   0.0005  -0.3123   0.0009   0.0073   0.0000  
+ 4.2878E-04| -0.0374  -0.3103  -0.0001  -0.9494   0.0066   0.0299  -0.0000  
+ 1.5243E-01|  0.0003   0.0026   0.0000   0.0314   0.1972   0.9799   0.0000  
+ 9.3325E+00| -0.0001  -0.0007  -0.0000  -0.0004  -0.9803   0.1973  -0.0000  
+--------------------------------------------------------------------------------
+
+====================================================================================
+  Covariance Matrix
+        1           2           3           4           5           6           7   
+   1.586e-06   1.059e-05   5.157e-09   1.524e-05   8.789e-04  -1.361e-04   8.935e-10
+   1.059e-05   7.819e-05   3.331e-08   1.313e-04   6.728e-03  -9.522e-04   7.289e-09
+   5.157e-09   3.331e-08   1.784e-11   4.069e-08   2.680e-06  -4.521e-07   2.551e-12
+   1.524e-05   1.313e-04   4.069e-08   5.416e-04   4.729e-03   3.913e-03   1.975e-08
+   8.789e-04   6.728e-03   2.680e-06   4.729e-03   8.976e+00  -1.774e+00   7.398e-07
+  -1.361e-04  -9.522e-04  -4.521e-07   3.913e-03  -1.774e+00   5.090e-01  -6.302e-08
+   8.935e-10   7.289e-09   2.551e-12   1.975e-08   7.398e-07  -6.302e-08   9.539e-13
+------------------------------------------------------------------------------------
+
+========================================================================
+Model phabs<1>(powerlaw<2> + kyrline<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   phabs      nH         10^22    8.05363E-02  +/-  1.25934E-03  
+   2    2   powerlaw   PhoIndex            3.04267      +/-  8.84253E-03  
+   3    2   powerlaw   norm                1.01757E-03  +/-  4.22418E-06  
+   4    3   kyrline    a/M        GM/c     1.00000      +/-  2.32722E-02  
+   5    3   kyrline    theta_o    deg      60.3227      +/-  2.99595      
+   6    3   kyrline    rin        GM/c^2   1.00000      frozen
+   7    3   kyrline    ms                  1            frozen
+   8    3   kyrline    rout       GM/c^2   400.000      frozen
+   9    3   kyrline    Erest      keV      6.40000      frozen
+  10    3   kyrline    h/q_out    GM/c^2   -3.00000     +/-  -1.00000     
+  11    3   kyrline    q_in                -5.85251     +/-  0.713470     
+  12    3   kyrline    rb         GM/c^2   400.000      frozen
+  13    3   kyrline    limb                0            frozen
+  14    3   kyrline    gamma               3.04267      = 2
+  15    3   kyrline    zshift              0.0          frozen
+  16    3   kyrline    norm                3.84902E-06  +/-  9.76670E-07  
+________________________________________________________________________
+
+
+Fit statistic : Chi-Squared =        2039.32 using 1904 PHA bins.
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+
+Test statistic : Chi-Squared =        2039.32 using 1904 PHA bins.
+ Reduced chi-squared =        1.07559 for   1896 degrees of freedom 
+ Null hypothesis probability =   1.124501e-02
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+XSPEC12>err 11
+ Parameter   Confidence Range (2.706)
+***Warning: Zero alpha-matrix diagonal element for parameter 10
+ Parameter 10 is pegged at -3 due to zero or negative pivot element, likely
+ caused by the fit being insensitive to the parameter.
+***Warning: Zero alpha-matrix diagonal element for parameter 10
+ Parameter 10 is pegged at -3 due to zero or negative pivot element, likely
+ caused by the fit being insensitive to the parameter.
+***Warning: Zero alpha-matrix diagonal element for parameter 10
+ Parameter 10 is pegged at -3 due to zero or negative pivot element, likely
+ caused by the fit being insensitive to the parameter.
+***Warning: Zero alpha-matrix diagonal element for parameter 10
+ Parameter 10 is pegged at -3 due to zero or negative pivot element, likely
+ caused by the fit being insensitive to the parameter.
+***Warning: Zero alpha-matrix diagonal element for parameter 10
+ Parameter 10 is pegged at -3 due to zero or negative pivot element, likely
+ caused by the fit being insensitive to the parameter.
+***Warning: Zero alpha-matrix diagonal element for parameter 10
+ Parameter 10 is pegged at -3 due to zero or negative pivot element, likely
+ caused by the fit being insensitive to the parameter.
+***Warning: Zero alpha-matrix diagonal element for parameter 10
+ Parameter 10 is pegged at -3 due to zero or negative pivot element, likely
+ caused by the fit being insensitive to the parameter.
+***Warning: Zero alpha-matrix diagonal element for parameter 10
+ Parameter 10 is pegged at -3 due to zero or negative pivot element, likely
+ caused by the fit being insensitive to the parameter.
+***Warning: Zero alpha-matrix diagonal element for parameter 10
+ Parameter 10 is pegged at -3 due to zero or negative pivot element, likely
+ caused by the fit being insensitive to the parameter.
+***Warning: Zero alpha-matrix diagonal element for parameter 10
+ Parameter 10 is pegged at -3 due to zero or negative pivot element, likely
+ caused by the fit being insensitive to the parameter.
+***Warning: Zero alpha-matrix diagonal element for parameter 10
+ Parameter 10 is pegged at -3 due to zero or negative pivot element, likely
+ caused by the fit being insensitive to the parameter.
+***Warning: Zero alpha-matrix diagonal element for parameter 10
+ Parameter 10 is pegged at -3 due to zero or negative pivot element, likely
+ caused by the fit being insensitive to the parameter.
+***Warning: Zero alpha-matrix diagonal element for parameter 10
+ Parameter 10 is pegged at -3 due to zero or negative pivot element, likely
+ caused by the fit being insensitive to the parameter.
+***Warning: Zero alpha-matrix diagonal element for parameter 10
+ Parameter 10 is pegged at -3 due to zero or negative pivot element, likely
+ caused by the fit being insensitive to the parameter.
+***Warning: Zero alpha-matrix diagonal element for parameter 10
+ Parameter 10 is pegged at -3 due to zero or negative pivot element, likely
+ caused by the fit being insensitive to the parameter.
+***Warning: Zero alpha-matrix diagonal element for parameter 10
+ Parameter 10 is pegged at -3 due to zero or negative pivot element, likely
+ caused by the fit being insensitive to the parameter.
+***Warning: Zero alpha-matrix diagonal element for parameter 10
+ Parameter 10 is pegged at -3 due to zero or negative pivot element, likely
+ caused by the fit being insensitive to the parameter.
+***Warning: Zero alpha-matrix diagonal element for parameter 10
+ Parameter 10 is pegged at -3 due to zero or negative pivot element, likely
+ caused by the fit being insensitive to the parameter.
+***Warning: Zero alpha-matrix diagonal element for parameter 10
+ Parameter 10 is pegged at -3 due to zero or negative pivot element, likely
+ caused by the fit being insensitive to the parameter.
+***Warning: Zero alpha-matrix diagonal element for parameter 10
+ Parameter 10 is pegged at -3 due to zero or negative pivot element, likely
+ caused by the fit being insensitive to the parameter.
+    11     -6.81395     -5.05091    (-0.961593,0.801443)
+XSPEC12>pl eufspec
+XSPEC12>pl emodel
+XSPEC12>mo all
+
+***XSPEC Error:  No model component named all
+all is not a valid model component name.
+ Additive Models: 
+agauss      apec        bapec       bbody       bbodyrad    bexrav      
+bexriv      bkn2pow     bknpower    bmc         bremss      bvapec      
+bvvapec     c6mekl      c6pmekl     c6pvmkl     c6vmekl     cemekl      
+cevmkl      cflow       compLS      compPS      compST      compTT      
+compbb      compmag     comptb      compth      cplinear    cutoffpl    
+disk        diskbb      diskir      diskline    diskm       disko       
+diskpbb     diskpn      eplogpar    eqpair      eqtherm     equil       
+expdec      ezdiskbb    gadem       gaussian    gnei        grad        
+grbm        kerrbb      kerrd       kerrdisk    kyrline*    laor        
+laor2       logpar      lorentz     meka        mekal       mkcflow     
+nei         npshock     nsa         nsagrav     nsatmos     nsmax       
+nsmaxg      nsx         nteea       nthComp     optxagn     optxagnf    
+pegpwrlw    pexmon      pexrav      pexriv      plcabs      posm        
+powerlaw    pshock      raymond     redge       refsch      rnei        
+sedov       sirf        smaug       srcut       sresc       step        
+vapec       vbremss     vequil      vgadem      vgnei       vmcflow     
+vmeka       vmekal      vnei        vnpshock    vpshock     vraymond    
+vrnei       vsedov      vvapec      vvgnei      vvnei       vvnpshock   
+vvpshock    vvrnei      vvsedov     zagauss     zbbody      zbremss     
+zgauss      zpowerlw    
+
+ Multiplicative Models: 
+SSS_ice     TBabs       TBgrain     TBvarabs    absori      acisabs     
+cabs        constant    cyclabs     dust        edge        expabs      
+expfac      gabs        heilin      highecut    hrefl       lyman       
+notch       pcfabs      phabs       plabs       pwab        recorn      
+redden      smedge      spexpcut    spline      swind1      uvred       
+varabs      vphabs      wabs        wndabs      xion        zTBabs      
+zbabs       zdust       zedge       zhighect    zigm        zpcfabs     
+zphabs      zredden     zsmdust     zvarabs     zvfeabs     zvphabs     
+zwabs       zwndabs     zxipcf      
+
+ Convolution Models: 
+cflux       cpflux      gsmooth     ireflect    kdblur      kdblur2     
+kerrconv    lsmooth     partcov     rdblur      reflect     rgsxsrc     
+simpl       zashift     zmshift     
+
+ Mixing Models: 
+ascac       projct      suzpsf      xmmpsf      
+
+ Pile-up Models: 
+pileup      
+
+ Additional models are available at :
+	 legacy.gsfc.nasa.gov/docs/xanadu/xspec/newmodels.html
+
+XSPEC12>ls
+16_30_kyr.fak		 kyrline.fak	 kyrlinenew.fak      kyr_lp.fak      pn-thin-5.arf  pokus.fak.fak
+epn_ff20_sdY9_v12.0.rmf  kyrline_lp.mdl  kyrlinenew.fak.fak  kyr_milion.fak  pokus.fak
+/bin/ls
+XSPEC12>save model kyr_q.mdl
+XSPEC12>@kyrline_lp.mdl 
+
+!XSPEC12>method leven 10 0.01;
+
+Fit statistic : Chi-Squared =        2039.32 using 1904 PHA bins.
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+
+Test statistic : Chi-Squared =        2039.32 using 1904 PHA bins.
+ Reduced chi-squared =        1.07559 for   1896 degrees of freedom 
+ Null hypothesis probability =   1.124509e-02
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+!XSPEC12>abund angr;
+ Solar Abundance Vector set to angr:  Anders E. & Grevesse N. Geochimica et Cosmochimica Acta 53, 197 (1989)
+
+Fit statistic : Chi-Squared =        2039.32 using 1904 PHA bins.
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+
+Test statistic : Chi-Squared =        2039.32 using 1904 PHA bins.
+ Reduced chi-squared =        1.07559 for   1896 degrees of freedom 
+ Null hypothesis probability =   1.124509e-02
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+!XSPEC12>xsect bcmc;
+ Cross Section Table set to bcmc:  Balucinska-Church and McCammon, 1998
+
+Fit statistic : Chi-Squared =        2039.32 using 1904 PHA bins.
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+
+Test statistic : Chi-Squared =        2039.32 using 1904 PHA bins.
+ Reduced chi-squared =        1.07559 for   1896 degrees of freedom 
+ Null hypothesis probability =   1.124509e-02
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+!XSPEC12>cosmo 70 0 0.73;
+
+Fit statistic : Chi-Squared =        2039.32 using 1904 PHA bins.
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+
+Test statistic : Chi-Squared =        2039.32 using 1904 PHA bins.
+ Reduced chi-squared =        1.07559 for   1896 degrees of freedom 
+ Null hypothesis probability =   1.124509e-02
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+!XSPEC12>xset delta 0.01;
+Parameter delta values for fits will now be 0.01 * parValue
+
+!XSPEC12>xset KYDIR  /mnt/31660B856FD2FABA/xspec/models/ky_lampostline/;
+
+Fit statistic : Chi-Squared =        2039.32 using 1904 PHA bins.
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+
+Test statistic : Chi-Squared =        2039.32 using 1904 PHA bins.
+ Reduced chi-squared =        1.07559 for   1896 degrees of freedom 
+ Null hypothesis probability =   1.124509e-02
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+!XSPEC12>xset KYRH  1.06321;
+
+Fit statistic : Chi-Squared =        2039.32 using 1904 PHA bins.
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+
+Test statistic : Chi-Squared =        2039.32 using 1904 PHA bins.
+ Reduced chi-squared =        1.07559 for   1896 degrees of freedom 
+ Null hypothesis probability =   1.124509e-02
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+!XSPEC12>xset KYRIN  1.23697;
+
+Fit statistic : Chi-Squared =        2039.32 using 1904 PHA bins.
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+
+Test statistic : Chi-Squared =        2039.32 using 1904 PHA bins.
+ Reduced chi-squared =        1.07559 for   1896 degrees of freedom 
+ Null hypothesis probability =   1.124509e-02
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+!XSPEC12>xset KYRMS  1.23697;
+
+Fit statistic : Chi-Squared =        2039.32 using 1904 PHA bins.
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+
+Test statistic : Chi-Squared =        2039.32 using 1904 PHA bins.
+ Reduced chi-squared =        1.07559 for   1896 degrees of freedom 
+ Null hypothesis probability =   1.124509e-02
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+
+!XSPEC12>systematic 0;
+ Model systematic error set to 0
+
+!XSPEC12>model  phabs(powerlaw + kyrline)  ;            0.075      0.001          0          0     100000      1e+06  ;                3       0.01         -3         -2          9         10  ;            0.001       0.01          0          0      1e+20      1e+24  ;            0.998        0.2          0          0          1          1  ;               60          5          5          5         85         85  ;                1       -0.5          1          1       1000       1000  ;                1  ;              400         -1          1          1       1000       1000  ;              6.4      -0.01          1          1         99         99  ;                3       -0.1          1          1        100        100  ;               -3       -0.5        -20        -20         20         20  ;              400       -0.5          1          1       1000       1000  ;                0  ;  = 2  ;                0       -0.1     -0.999     -0.999         10         10  ;            1e-06       0.01          0          0      1e+20      1e+24;
+
+========================================================================
+Model phabs<1>(powerlaw<2> + kyrline<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   phabs      nH         10^22    7.50000E-02  +/-  0.0          
+   2    2   powerlaw   PhoIndex            3.00000      +/-  0.0          
+   3    2   powerlaw   norm                1.00000E-03  +/-  0.0          
+   4    3   kyrline    a/M        GM/c     0.998000     +/-  0.0          
+   5    3   kyrline    theta_o    deg      60.0000      +/-  0.0          
+   6    3   kyrline    rin        GM/c^2   1.00000      frozen
+   7    3   kyrline    ms                  1            frozen
+   8    3   kyrline    rout       GM/c^2   400.000      frozen
+   9    3   kyrline    Erest      keV      6.40000      frozen
+  10    3   kyrline    h/q_out    GM/c^2   3.00000      frozen
+  11    3   kyrline    q_in                -3.00000     frozen
+  12    3   kyrline    rb         GM/c^2   400.000      frozen
+  13    3   kyrline    limb                0            frozen
+  14    3   kyrline    gamma               3.00000      = 2
+  15    3   kyrline    zshift              0.0          frozen
+  16    3   kyrline    norm                1.00000E-06  +/-  0.0          
+________________________________________________________________________
+
+
+Fit statistic : Chi-Squared =        2104.35 using 1904 PHA bins.
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+
+Test statistic : Chi-Squared =        2104.35 using 1904 PHA bins.
+ Reduced chi-squared =        1.10872 for   1898 degrees of freedom 
+ Null hypothesis probability =   5.857309e-04
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+XSPEC12>newpar 16 1e-5
+
+Fit statistic : Chi-Squared =        4130.50 using 1904 PHA bins.
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+
+Test statistic : Chi-Squared =        4130.50 using 1904 PHA bins.
+ Reduced chi-squared =        2.17624 for   1898 degrees of freedom 
+ Null hypothesis probability =  5.536330e-167
+
+***Warning: Chi-square may not be valid due to bins with zero variance
+            in spectrum number(s): 1 
+
+ Current data and model not fit yet.
+XSPEC12>pl 
+XSPEC12>
+
+
+
+##############################
+co som robil:
+vytvoril som model do ktoreho som dosadil "zname" parametre z publikacie
+normovaciu konstantu zeleza som dal taku aby sa trochu v zeleze aj prejavila
+eqw teda eqvivalent width bolo okolo 1.3 keV co je sice moc, bezne treba tak .1-.5
+ale v danych okolnostach bolo treba, menilo sa to pomocou parametru 16
+z tohoto modelu som vyfejkoval dáta pomocou response matice a exp casu megasekunda 
+
+vytvoril som opäť ten isty model pricom som paramater q_in uvolnil a q_out dal -3
+vysledok vypada takto:
+   1    1   phabs      nH         10^22    8.05364E-02  +/-  0.0          
+   2    2   powerlaw   PhoIndex            3.04267      +/-  0.0          
+   3    2   powerlaw   norm                1.01757E-03  +/-  0.0          
+   4    3   kyrline    a/M        GM/c     1.00000      +/-  0.0          
+   5    3   kyrline    theta_o    deg      60.3221      +/-  0.0          
+   6    3   kyrline    rin        GM/c^2   1.00000      frozen
+   7    3   kyrline    ms                  1            frozen
+   8    3   kyrline    rout       GM/c^2   400.000      frozen
+   9    3   kyrline    Erest      keV      6.40000      frozen
+  10    3   kyrline    h/q_out    GM/c^2   -3.00000     +/-  0.0          
+  11    3   kyrline    q_in                -5.85235     +/-  0.0          
+  12    3   kyrline    rb         GM/c^2   400.000      frozen
+  13    3   kyrline    limb                0            frozen
+  14    3   kyrline    gamma               3.04267      = 2
+  15    3   kyrline    zshift              0.0          frozen
+  16    3   kyrline    norm                3.84907E-06  +/-  0.0  
+  
+nasledne som dopocital pre q_in error pomocou prikazu err 11
+
+A TOTO POTREBUJEM ZOPAKOVAT PRE RELLINE
+
+
+mo phabs*(pow+kyrline) #alternativne budem este vytvarat + relline
+hodnoty su ulozene v kyrline_lp
+flux #hodnota toku
+
+show all #vypise vsetky informacie o modeloch a datach
+newpar 16 3e-6 #zmena hodnoty 16. parametru
+eqw 3 #urci ekvivalentnu sirku čiary na tretej komponente
+thaw 11 #z toho chceme vysledok takže z toho mame mať fit
+par 10 položime -3 q_out konstantny parameter za rb
+fitneme
+  -1.91489     +/-  0.129918  
+  -5.24859     +/-  0.573967 bez
+  -4.49014     +/-  0.548707 
+   -4.84498     +/-  0.525636  
+   -5.80876     +/-  0.843280   
+   -4.60862     +/-  0.325095  
+   -4.51436     +/-  0.504499  
+fakeit none
+response matica
+pn matica
+nazov ukladacieho fajlu fajl.fak
+exp doba
+
+setplot energy
+ignore **-0.5 10.0-** #ignorovanie bodov zo spodu aj zvrchu
+pl ldata emo eufspec #log data a emo skus
+save model.mld ulozi model
+@model.mld vyvola model
+newpar 10 -3 0.1 -10 -10 0 0 #hranice parametru pricom 0.1 je delta
+fit 10000
+thaw
+freeze
+pocitanie erroru... err 11 ...error a cislo parametru

@@ -1,0 +1,86 @@
+######Vstupy do fakeit##########
+Model phabs<1>(powerlaw<2> + kyrline<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   phabs      nH         10^22    7.50000E-02  +/-  0.0          
+   2    2   powerlaw   PhoIndex            3.00000      +/-  0.0          
+   3    2   powerlaw   norm                1.00000E-03  +/-  0.0          
+   4    3   kyrline    a/M        GM/c     0.998000     +/-  0.0          
+   5    3   kyrline    theta_o    deg      60.0000      +/-  0.0          
+   6    3   kyrline    rin        GM/c^2   1.00000      frozen
+   7    3   kyrline    ms                  1            frozen
+   8    3   kyrline    rout       GM/c^2   400.000      frozen
+   9    3   kyrline    Erest      keV      6.40000      frozen
+  10    3   kyrline    h/q_out    GM/c^2   3.00000      frozen
+  11    3   kyrline    q_in                -3.00000     frozen
+  12    3   kyrline    rb         GM/c^2   400.000      frozen
+  13    3   kyrline    limb                0            frozen
+  14    3   kyrline    gamma               3.00000      = 2
+  15    3   kyrline    zshift              0.0          frozen
+  16    3   kyrline    norm                3.00000E-06  +/-  0.0   
+  
+Model phabs<1>(powerlaw<2> + relline<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   phabs      nH         10^22    7.50000E-02  +/-  0.0          
+   2    2   powerlaw   PhoIndex            3.00000      +/-  0.0          
+   3    2   powerlaw   norm                1.00000E-03  +/-  0.0          
+   4    3   relline    lineE      keV      6.40000      +/-  0.0          
+   5    3   relline    Index1              -3.00000     +/-  0.0          
+   6    3   relline    Index2              -3.00000     +/-  0.0          
+   7    3   relline    Rbr                 400.000      frozen
+   8    3   relline    a                   0.998000     +/-  0.0          
+   9    3   relline    Incl       deg      60.0000      frozen
+  10    3   relline    Rin                 -1.00000     frozen
+  11    3   relline    Rout                400.000      frozen
+  12    3   relline    z                   0.0          frozen
+  13    3   relline    limb                0.0          frozen
+  14    3   relline    norm                3.00000E-06  +/-  0.0  
+
+  
+eqw 3 = 1.15322 keV kyrline, 1.37453 keV relline
+fakeit none, exp 1e6
+setplot energy
+ignore **-0.5 10.0-**
+newpar kyr (rel) => 10 (6) -3 0.1 -10 -10 0 0
+thaw 11
+fit 10000
+vysledok:  
+Model phabs<1>(powerlaw<2> + kyrline<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   phabs      nH         10^22    7.97477E-02  +/-  1.19041E-03  
+   2    2   powerlaw   PhoIndex            3.03103      +/-  8.38317E-03  
+   3    2   powerlaw   norm                1.01706E-03  +/-  4.00072E-06  
+   4    3   kyrline    a/M        GM/c     1.000000     +/-  8.98176E-02  
+   5    3   kyrline    theta_o    deg      56.1924      +/-  1.49309      
+   6    3   kyrline    rin        GM/c^2   1.00000      frozen
+   7    3   kyrline    ms                  1            frozen
+   8    3   kyrline    rout       GM/c^2   400.000      frozen
+   9    3   kyrline    Erest      keV      6.40000      frozen
+  10    3   kyrline    h/q_out    GM/c^2   -3.00000     +/-  -1.00000     
+  11    3   kyrline    q_in                -4.32185     +/-  0.424974     
+  12    3   kyrline    rb         GM/c^2   400.000      frozen
+  13    3   kyrline    limb                0            frozen
+  14    3   kyrline    gamma               3.03103      = 2
+  15    3   kyrline    zshift              0.0          frozen
+  16    3   kyrline    norm                3.07612E-06  +/-  1.01628E-06 
+    
+Model phabs<1>(powerlaw<2> + relline<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   phabs      nH         10^22    7.80061E-02  +/-  1.23050E-03  
+   2    2   powerlaw   PhoIndex            3.02213      +/-  8.38689E-03  
+   3    2   powerlaw   norm                1.00948E-03  +/-  4.17752E-06  
+   4    3   relline    lineE      keV      6.37777      +/-  0.107745     
+   5    3   relline    Index1              4.91141      +/-  0.565325     
+   6    3   relline    Index2              -3.00000     +/-  -1.00000     
+   7    3   relline    Rbr                 400.000      frozen
+   8    3   relline    a                   0.998000     +/-  5.89487E-02  
+   9    3   relline    Incl       deg      60.0000      frozen
+  10    3   relline    Rin                 -1.00000     frozen
+  11    3   relline    Rout                400.000      frozen
+  12    3   relline    z                   0.0          frozen
+  13    3   relline    limb                0.0          frozen
+  14    3   relline    norm                2.33219E-06  +/-  8.16505E-07  
+

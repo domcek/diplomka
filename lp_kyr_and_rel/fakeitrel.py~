@@ -1,0 +1,57 @@
+#!/usr/bin/python
+from xspec import *
+from pylab import *
+from time import time
+
+stamp = time()
+
+#plot function for playing
+def plot(E,V,name,log=True):
+	f, ax = plt.subplots()		
+	ax.plot(E,V,"r")
+	ax.grid(True)
+	ax.set_xlabel("Energy [keV]")
+	ax.set_ylabel('Photons cm$^{-2}\cdot$s$^{-1}\cdot$keV$^{-1}$')
+	ax.set_xscale('log')
+	ax.set_yscale('log')
+	handles, labels = ax.get_legend_handles_labels()
+	ax.legend(handles, labels,loc = "lower left")
+	savefig(name+".pdf")
+	
+AllModels.lmod("relline","/mnt/31660B856FD2FABA/xspec/models/relline/")
+AllModels.setEnergies(".1 50. 1000 log")
+
+#loading relliine_lp model, setting parameters
+m = Model("phabs*(pow+relline_lp)")
+m.setPars({1:7.5e-2,2:3,3:1e-3,5:3,7:60,13:3e-6})
+m(12).link = "2"
+AllModels.eqwidth("3")
+AllModels.show()
+
+#using fakeit function to generate data
+fs = FakeitSettings(response="epn_ff20_sdY9_v12.0.rmf",arf="pn-thin-5.arf",exposure=1e6)
+AllData.fakeit(1,fs,True,"fakeit_")
+AllModels.setEnergies(".1 10. 1000 log")
+AllData.ignore("**-0.1 10.0-**")
+AllData.show()
+V = AllData(1).values
+E = AllData(1).energies
+
+
+
+m2 = Model("phabs*(pow+relline)")
+m2.setPars({1:7.5e-2,2:3,3:1e-3,5:3,9:60,14:3e-6})
+m2.setPars({6:"3 0.1 0 0 10 10"})
+m2(5).frozen = False
+m2(7).frozen = False
+AllModels.show()
+Fit.nIterations = 10000
+Fit.perform()
+m2(5).error
+
+
+Plot.xAxis = "keV"
+Plot.device = "/xs"
+Plot("ldata","emodel","ratio", "residuals")
+
+print time()-stamp

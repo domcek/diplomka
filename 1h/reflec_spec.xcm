@@ -1,0 +1,77 @@
+set xs_return_result 1
+query yes
+
+#  Slurp up the data file
+set fp [open r_xi_constant_lamppost_90_100_2.dat r]
+set file_data [read $fp]
+close $fp
+
+#  Process data file
+set data [split $file_data "\n"]
+
+# Set fixed model parameters for kyconv
+set a_M		0.9
+set th_o	30.0
+set alph	3.0
+set beta	3.0
+set rb	 	300
+# Set fixed model parameters for reflionx
+set Fe_s	3.0
+set Gam		2.0
+
+
+model po
+/*
+
+foreach line $data {
+
+	if { [string is ascii -strict $line] == 1} {
+
+		set ring [split $line ":"]
+		set n [lindex $ring 0]
+		set r_in [lindex $ring 1]
+		set r_out [lindex $ring 2]
+		set xi [lindex $ring 3]
+
+		if {$n == 1} {
+			set rfx_N 1
+			set xi_1 $xi
+			}
+		if {$n > 1} {set rfx_N [exp $xi_1/$xi] }
+		addcomp [exp 2*$n] atable{/home/pjethwa/XSpec_Models/reflionx.mod}
+		/*
+		newpar [exp 2+17*($n-1)+1] $Fe_s
+		newpar [exp 2+17*($n-1)+2] $Gam
+		newpar [exp 2+17*($n-1)+3] $xi
+		newpar [exp 2+17*($n-1)+5] $rfx_N
+		addcomp [exp 2*$n] kyconv
+		/*
+		newpar [exp 2+17*($n-1)+1] $a_M
+		newpar [exp 2+17*($n-1)+2] $th_o
+		newpar [exp 2+17*($n-1)+3] $r_in
+		newpar [exp 2+17*($n-1)+5] $r_out
+		newpar [exp 2+17*($n-1)+6] $alph
+		newpar [exp 2+17*($n-1)+7] $beta
+		newpar [exp 2+17*($n-1)+8] $rb
+		newpar [exp 2+17*($n-1)+12] -1
+	}
+}
+
+delcomp 1
+
+newpar 0
+
+dummy 0.1 1000 100
+cpd const_lp10.ps/ps
+plot eemodel
+
+exit
+
+
+
+
+
+
+
+
+
