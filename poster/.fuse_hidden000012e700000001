@@ -2,10 +2,7 @@
 from xspec import *
 from pylab import *
 import numpy as np
-from scipy.optimize import curve_fit
  
-def powerlaw(x,a,b):
-	return a*(x**b)
 
 def create_r2(n,start,finish):
 	r=[]
@@ -154,18 +151,6 @@ def mainkyr(n,spin,theta,ms,start,finish,modelfinish,lineE,alpha,beta,Rbr,z,limb
 
 	x,y,err = fit_kyrpow(n,r,S,spin,theta,ms,start,finish,lineE,alpha,beta,Rbr,z,limb,norm,phoindex,phonorm,nh,err_fit)
 
-	x = np.log10(x)
-	y = np.log10(y)
-
-	popt, pcov = curve_fit(powerlaw, x, y)
-	print popt
-
-	plot(x, y, 'o',label="kyrline code -1 without S")
-	plot(x,powerlaw(x,*popt),'r--')
-	ylabel('y')
-	xlabel('x')
-	show()
-
 #	AllModels.initpackage("ky", "lmodel.dat" ,"/mnt/31660B856FD2FABA/xspec/models/KY_code_0/ -udmget64")
 	AllModels.lmod("ky","/mnt/31660B856FD2FABA/xspec/models/KY_code_0/")
 	Xset.addModelString("KYDIR","/mnt/31660B856FD2FABA/xspec/models/KY_code_0/")
@@ -176,7 +161,7 @@ def mainkyr(n,spin,theta,ms,start,finish,modelfinish,lineE,alpha,beta,Rbr,z,limb
 	print const
 	print len(y0)
 	for i in range(len(y0)):
-		y0[i] = y0[i]*const
+		y0[i] = y0[i]/const
 
 
 
