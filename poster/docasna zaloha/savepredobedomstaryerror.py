@@ -72,16 +72,14 @@ def fit_kyrpow_S(n,r,S,spin,theta,ms,start,finish,lineE,alpha,beta,Rbr,z,limb,no
 	valS = []
 	error = []
 	x=[]
-	err_down = []
-	err_up = []
 
 	for i in range(n):
 		valS.append((m(12+i*12).values[0])/S[i])
 		x.append((r[i][0]+r[i][1])/2)
-		err_down.append(abs(m(12+i*12).error[0]-m(12+i*12).values[0])) #xspec returns errors in format with down and up limit, it is necessary to substract average fitted value to get errors into python
-		err_up.append(abs(m(12+i*12).error[1]-m(12+i*12).values[0]))
+		error.append(abs(m(12+i*12).error[0]-m(12+i*12).values[0]))
+		print abs(m(12+i*12).error[0])
 	
-	return x,valS,err_down,err_up
+	return x,valS,error
 
 def fit_kyrpow(n,r,S,spin,theta,ms,start,finish,lineE,alpha,beta,Rbr,z,limb,norm,phoindex,phonorm,nh,err_fit):
 	string = create_kyr(n)
@@ -103,65 +101,110 @@ def fit_kyrpow(n,r,S,spin,theta,ms,start,finish,lineE,alpha,beta,Rbr,z,limb,norm
 #	raw_input('Press <ENTER> to continue')
 
 	if err_fit == True:
-		stringerr = "maximum 100000, "
+		stringerr = "maximum 100000,"
 		for i in range(n):
 			stringerr += str(12+i*12)+","
-		print stringerr
 		stringerr = stringerr[:-1]
 		Fit.error(stringerr)
 
 	AllModels.show()
 	val = []
-	err_down = []
-	err_up = []
+	error = []
 	x=[]
-
 
 	for i in range(n):
 		val.append((m(12+i*12).values[0]))
 		x.append((r[i][0]+r[i][1])/2)#+0.03*(r[i][0]+r[i][1])/2)
-		err_down.append(abs(m(12+i*12).error[0]-m(12+i*12).values[0])) #xspec returns errors in format with down and up limit, it is necessary to substract average fitted value to get errors into python
-		err_up.append(abs(m(12+i*12).error[1]-m(12+i*12).values[0]))
+		error.append(abs(m(12+i*12).error[0]-m(12+i*12).values[0])) #xspec returns errors in format with down and up limit, it is necessary to substract average fitted value to get errors into python
+		print m(12+i*12).error
+		print m(12+i*12).error[0], m(12+i*12).values[0]
+		print m(12+i*12).error[1]
 
+	raw_input('Press <ENTER> to continue')
 
+	
+	return x,val,error
 
-	return x,val,err_down,err_up
-
-def fitting(n,k,r,S,spin,theta,ms,start,fitfinish,modelfinish,lineE,alpha,beta,Rbr,z,limb,norm,phoindex,phonorm,nh,err_fit,broken,model):
+def not_broken(n,k,spin,theta,ms,start,fitfinish,modelfinish,lineE,alpha,beta,Rbr,z,limb,norm,phoindex,phonorm,nh,err_fit,broken,model):
 	#if time delete _in
+	r_in = create_r2(n,start,fitfinish)
+	S_in = create_S2(r_in)
 
 	if model == -1:	
-		x,y,err_down,err_up = fit_kyrpow(n+k,r,S,spin,theta,ms,start,fitfinish,lineE,alpha,beta,Rbr,z,limb,norm,phoindex,phonorm,nh,err_fit)  #n+k for fitting whole radius range
+		x_in,y_in,err_in = fit_kyrpow(n,r_in,S_in,spin,theta,ms,start,fitfinish,lineE,alpha,beta,Rbr,z,limb,norm,phoindex,phonorm,nh,err_fit)
 
 	if model == 0:
-		x,y,err_down,err_up= fit_kyrpow_S(n+k,r,S,spin,theta,ms,start,fitfinish,lineE,alpha,beta,Rbr,z,limb,norm,phoindex,phonorm,nh,err_fit)
+		x_in,y_in,err_in = fit_kyrpow_S(n,r_in,S_in,spin,theta,ms,start,fitfinish,lineE,alpha,beta,Rbr,z,limb,norm,phoindex,phonorm,nh,err_fit)
 
-	xl = np.log10(x)
-	yl = np.log10(y)
+	xl_in = np.log10(x_in)
+	yl_in = np.log10(y_in)
 	derivation_const = 0.434
-	errl_down= []
-	errl_up = []
+	errl_in = []
 	if err_fit == True:
-		for i in range(len(err_down)):
-				errl_down.append(abs(derivation_const*err_down[i]/y[i])) #relative error of loglog scale
-				errl_up.append(abs(derivation_const*err_up[i]/y[i])) #relative error of loglog scale
+		for i in range(len(err_in)):
+			errl_in.append(abs(derivation_const*err_in[i]/y_in[i])) #relative error of loglog scale
 
 
-	#sorting
-	sig = []
-	for i in range(len(err_down)):
-		sig.append(1.0/err_up[i])
+	popt_in, pcov_in = curve_fit(powerlaw, xl_in, yl_in)
+	print popt_in
+	return x_in,y_in,err_in,xl_in,yl_in,errl_in,popt_in,pcov_in
 
-	print err_down
-	if broken == True:
-		popt_in, pcov_in = curve_fit(powerlaw, xl[:n], yl[:n])
-		popt_out, pcov_out = curve_fit(powerlaw, xl[n-1:n+k], yl[n-1:n+k])
-		return x,y,err_down,err_up,xl,yl,errl_down,errl_up,popt_in,pcov_in,popt_out,pcov_out
-	if broken == False:
-		popt, pcov = curve_fit(powerlaw, xl, yl,sigma=sig)
-		return x,y,err_down,err_up,xl,yl,errl_down,errl_up,popt,pcov
-	print popt
-	print pcov
+def is_broken(n,k,spin,theta,ms,start,fitfinish,modelfinish,lineE,alpha,beta,Rbr,z,limb,norm,phoindex,phonorm,nh,err_fit,broken,model):
+	r_in = create_r2(n,start,fitfinish)
+	S_in = create_S2(r_in)
+
+	if model == -1:	
+		x_in,y_in,err_in = fit_kyrpow(n,r_in,S_in,spin,theta,ms,start,fitfinish,lineE,alpha,beta,Rbr,z,limb,norm,phoindex,phonorm,nh,err_fit)
+
+	if model == 0:
+		x_in,y_in,err_in = fit_kyrpow_S(n,r_in,S_in,spin,theta,ms,start,fitfinish,lineE,alpha,beta,Rbr,z,limb,norm,phoindex,phonorm,nh,err_fit)	
+
+	xl_in = np.log10(x_in)
+	yl_in = np.log10(y_in)
+	derivation_const = 0.434
+	errl_in = []
+	if err_fit == True:
+		for i in range(len(err_in)):
+			errl_in.append(abs(derivation_const*err_in[i]/y_in[i])) #relative error of loglog scale
+
+
+	popt_in, pcov_in = curve_fit(powerlaw, xl_in, yl_in)
+
+	r_out = create_r2(k,fitfinish,modelfinish)
+	S_out = create_S2(r_out)
+	print r_out
+	if model == -1:	
+		x_out,y_out,err_out = fit_kyrpow(k,r_out,S_out,spin,theta,ms,fitfinish,modelfinish,lineE,alpha,beta,Rbr,z,limb,norm,phoindex,phonorm,nh,err_fit)
+
+	if model == 0:	
+		x_out,y_out,err_out = fit_kyrpow_S(k,r_out,S_out,spin,theta,ms,fitfinish,modelfinish,lineE,alpha,beta,Rbr,z,limb,norm,phoindex,phonorm,nh,err_fit)
+		
+	xl_out = np.log10(x_out)
+	yl_out = np.log10(y_out)
+	errl_out = []
+	if err_fit == True:
+		for i in range(len(err_out)):
+			errl_out.append(abs(derivation_const*err_out[i]/y_out[i])) #relative error of loglog scale
+
+	popt_out, pcov_out = curve_fit(powerlaw, xl_out, yl_out)
+	print popt_out
+
+	xl,yl,errl,err = [[] for i in range(4)]
+	#joining lists
+	x = x_in + x_out
+	y = y_in + y_out
+	if err_fit == True: err = err_in + err_out
+	for i in range(len(xl_in)):
+		xl.append(xl_in[i])
+		yl.append(yl_in[i])
+		if err_fit == True: errl.append(errl_in[i])
+	for i in range(len(xl_out)):
+		xl.append(xl_out[i])
+		yl.append(yl_out[i])
+		if err_fit == True: errl.append(errl_out[i])
+
+	return x,y,err,xl,yl,errl,x_in,y_in,err_in,xl_in,yl_in,errl_in,popt_in,pcov_in,x_out,y_out,err_out,xl_out,yl_out,errl_out,popt_out,pcov_out
+
 
 #pozor na log errory v xspecu
 
@@ -197,35 +240,31 @@ def mainkyr(n,k,spin,theta,ms,start,fitfinish,modelfinish,lineE,alpha,beta,Rbr,z
 	model = -1
 	##until break fit radius
 	if broken == False: 
-		r = create_r2(n,start,fitfinish)
-		S = create_S2(r)
-	if broken == True: 
-		r1 = create_r2(n,start,fitfinish)
-		S1 = create_S2(r1)
-		r2 = create_r2(k,fitfinish,modelfinish)
-		S2 = create_S2(r2)
-		r = r1 + r2
-		S = S1 + S2
+		x,y,err,xl,yl,errl,popt,pcov = not_broken(n,k,spin,theta,ms,start,fitfinish,modelfinish,lineE,alpha,beta,Rbr,z,limb,norm,phoindex,phonorm,nh,err_fit,broken,model)
 
-	if broken == True: x,y,err_down,err_up,xl,yl,errl_down,errl_up,popt_in,pcov_in,popt_out,pcov_out = fitting(n,k,r,S,spin,theta,ms,start,fitfinish,modelfinish,lineE,alpha,beta,Rbr,z,limb,norm,phoindex,phonorm,nh,err_fit,broken,model)
-	if broken == False: x,y,err_down,err_up,xl,yl,errl_down,errl_up,popt,pcov = fitting(n,k,r,S,spin,theta,ms,start,fitfinish,modelfinish,lineE,alpha,beta,Rbr,z,limb,norm,phoindex,phonorm,nh,err_fit,broken,model)
+	if broken == True:
+		x,y,err,xl,yl,errl,x_in,y_in,err_in,xl_in,yl_in,errl_in,popt_in,pcov_in,x_out,y_out,err_out,xl_out,yl_out,errl_out,popt_out,pcov_out = is_broken(n,k,spin,theta,ms,start,fitfinish,modelfinish,lineE,alpha,beta,Rbr,z,limb,norm,phoindex,phonorm,nh,err_fit,broken,model)
+		
 
 #	AllModels.initpackage("ky", "lmodel.dat" ,"/mnt/31660B856FD2FABA/xspec/models/KY_code_0/ -udmget64")
-
+	"""
 	AllModels.lmod("ky","/mnt/31660B856FD2FABA/xspec/models/KY_code_0/")
 	Xset.addModelString("KYDIR","/mnt/31660B856FD2FABA/xspec/models/KY_code_0/")
 	AllModels.setEnergies(".1 50. 1000 log")
 
-	#model = 0
-	#if broken == True: x0,y0,err0_down,err0_up,x0l,y0l,err0l_down,err0l_up,popt0_in,pcov0_in,popt0_out,pcov0_out = fitting(n,k,r,S,spin,theta,ms,start,fitfinish,modelfinish,lineE,alpha,beta,Rbr,z,limb,norm,phoindex,phonorm,nh,err_fit,broken,model)
-	#if broken == False: x0,y0,err0_down,err0_up,x0l,y0l,err0l_down,err0l_up,popt0,pcov0 = fitting(n,k,r,S,spin,theta,ms,start,fitfinish,modelfinish,lineE,alpha,beta,Rbr,z,limb,norm,phoindex,phonorm,nh,err_fit,broken,model)
+	model = 0
+	if broken == False: 
+		x0,y0,err0,x0l,y0l,err0l,popt0,pcov0 = not_broken(n,k,spin,theta,ms,start,fitfinish,modelfinish,lineE,alpha,beta,Rbr,z,limb,norm,phoindex,phonorm,nh,err_fit,broken,model)
 
+	if broken == True:
+		x0,y0,err0,x0l,y0l,err0l,x0_in,y0_in,err0_in,x0l_in,y0l_in,err0l_in,popt0_in,pcov0_in,x0_out,y0_out,err0_out,x0l_out,y0l_out,err0l_out,popt0_out,pcov0_out = is_broken(n,k,spin,theta,ms,start,fitfinish,modelfinish,lineE,alpha,beta,Rbr,z,limb,norm,phoindex,phonorm,nh,err_fit,broken,model)
+	"""	
 
 	AllModels.calcFlux("0.1 10")
 	if broken == True:
 		plot(xl,yl,".",color="blue",label="kyrline code -1 without S, index. "+str(popt_in[0])+" index2. "+str(popt_out[0]))
-		plot(xl[:n],powerlaw(xl[:n],*popt_in),'b--')
-		plot(xl[n-1:n+k],powerlaw(xl[n-1:n+k],*popt_out),'b--')
+		plot(xl_in,powerlaw(xl_in,*popt_in),'b--')
+		plot(xl_out,powerlaw(xl_out,*popt_out),'b--')
 
 	if broken == False:
 		plot(xl,yl,".",color="blue",label="kyrline code -1 without S, index = "+str(popt[0])+"+/-"+str(pcov[0][0]))
@@ -234,8 +273,8 @@ def mainkyr(n,k,spin,theta,ms,start,fitfinish,modelfinish,lineE,alpha,beta,Rbr,z
 	"""
 	if broken == True:
 		plot(x0l,y0l,".",color="red",label="kyrline code 0 with S index. "+str(popt0_in[0])+" index2. "+str(popt0_out[0]))
-		plot(x0l[:n],powerlaw(x0l[:n],*popt0_in),'r--')
-		plot(x0l[n-1:n+k],powerlaw(x0l[n-1:n+k],*popt0_out),'r--')
+		plot(x0l_in,powerlaw(x0l_in,*popt0_in),'r--')
+		plot(x0l_out,powerlaw(x0l_out,*popt0_out),'r--')
 		#kod na down limit errorbar(x+0.6, y, xerr=0.1, xuplims=upperlimits, xlolims=lowerlimits)
 
 	if broken == False:
@@ -247,13 +286,12 @@ def mainkyr(n,k,spin,theta,ms,start,fitfinish,modelfinish,lineE,alpha,beta,Rbr,z
 	ylabel("N(r)")
 
 	#ylim([10**(-22),10**4])
-	if err_fit == True: errorbar(xl,yl, yerr = [errl_down,errl_up], marker = "+", linestyle = "None") #weird stuff
-	#if err_fit == True: errorbar(x0l,y0l, yerr = [err0l_down,err0l_up], marker = "+", linestyle = "None") #weird stuff
+	if err_fit == True: errorbar(xl,yl, yerr = errl, marker = "+", linestyle = "None") #weird stuff
+	#if err_fit == True: errorbar(x0l,y0l, yerr = err0l, marker = "+", linestyle = "None") #weird stuff
 	grid(True)
 	legend()
-	show()	
 	savefig("./play/kyrline_normline_"+str(norm)+"_phonorm_"+str(phonorm)+"fit.png")
-	
+	show()	
 	clf()
 
 	plot(x,y,".",color="blue",label="kyrline code -1 without S")
@@ -264,29 +302,30 @@ def mainkyr(n,k,spin,theta,ms,start,fitfinish,modelfinish,lineE,alpha,beta,Rbr,z
 	yscale('log',nonposy='clip')
 
 	#ylim([10**(-22),10**4])
-	if err_fit == True: errorbar(x,y, yerr = [err_down,err_up], marker = "+", linestyle = "None") #weird stuff
-	#if err_fit == True: errorbar(x0,y0, yerr = [err0_down,err0_up], marker = "+", linestyle = "None") #weird stuff
+	if err_fit == True: errorbar(x,y, yerr = errl, marker = "+", linestyle = "None") #weird stuff
+	#if err_fit == True: errorbar(x0,y0, yerr = err0l, marker = "+", linestyle = "None") #weird stuff
 	grid(True)
 	legend()
 	#savefig("./play/kyrline_normline_"+str(norm)+"_phonorm_"+str(phonorm)+".png")
 	show()	
 	clf()
 
-n = 8
-k = 4 # out parameter
+
+n=5
+k = 5 # out parameter
 spin = 0.9
 theta = 55
 start = np.log(2.3)
-modelfinish = np.log(100)
+modelfinish = np.log(10)
 ms = 1
-fitfinish = np.log(10)
+fitfinish = np.log(5)
 lineE = 6.4
 alpha = 5
 beta = 2
 Rbr = 10
 z = 4.1e-2
 limb = 0 #izotropic
-norm = 1e-2	 #line
+norm = 1e-1 #line
 phoindex = 2
 phonorm = 1e-3
 nh = 1
